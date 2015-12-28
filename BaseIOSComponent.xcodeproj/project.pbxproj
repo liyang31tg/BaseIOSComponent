@@ -14,6 +14,18 @@
 		B619FDA11C302BB4000A2A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619FD9F1C302BB4000A2A2A /* LaunchScreen.storyboard */; };
 		B619FDAC1C302BB4000A2A2A /* BaseIOSComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDAB1C302BB4000A2A2A /* BaseIOSComponentTests.swift */; };
 		B619FDB71C302BB4000A2A2A /* BaseIOSComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDB61C302BB4000A2A2A /* BaseIOSComponentUITests.swift */; };
+		B619FDCC1C302CCB000A2A2A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDCB1C302CCB000A2A2A /* WebSocket.swift */; };
+		B619FDCE1C302CDD000A2A2A /* WSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDCD1C302CDD000A2A2A /* WSClient.swift */; };
+		B619FDD01C302D42000A2A2A /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDCF1C302D42000A2A2A /* SSLSecurity.swift */; };
+		B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDD21C302DB8000A2A2A /* HTTPSecurity.swift */; };
+		B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDD31C302DB8000A2A2A /* Operation.swift */; };
+		B619FDD91C302DB8000A2A2A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDD41C302DB8000A2A2A /* Request.swift */; };
+		B619FDDA1C302DB8000A2A2A /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDD51C302DB8000A2A2A /* StatusCode.swift */; };
+		B619FDDB1C302DB8000A2A2A /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDD61C302DB8000A2A2A /* Upload.swift */; };
+		B619FDDE1C302EEA000A2A2A /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDDD1C302EEA000A2A2A /* CommonUtil.swift */; };
+		B619FDE21C3036C0000A2A2A /* NSData+GZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FDE11C3036C0000A2A2A /* NSData+GZIP.swift */; };
+		B619FDE41C3036E6000A2A2A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B619FDE31C3036E6000A2A2A /* libz.tbd */; };
+		B619FDE61C3037CC000A2A2A /* zlib in Resources */ = {isa = PBXBuildFile; fileRef = B619FDE51C3037CC000A2A2A /* zlib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		B619FDB21C302BB4000A2A2A /* BaseIOSComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseIOSComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B619FDB61C302BB4000A2A2A /* BaseIOSComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIOSComponentUITests.swift; sourceTree = "<group>"; };
 		B619FDB81C302BB4000A2A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B619FDCB1C302CCB000A2A2A /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		B619FDCD1C302CDD000A2A2A /* WSClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSClient.swift; sourceTree = "<group>"; };
+		B619FDCF1C302D42000A2A2A /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		B619FDD21C302DB8000A2A2A /* HTTPSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSecurity.swift; sourceTree = "<group>"; };
+		B619FDD31C302DB8000A2A2A /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		B619FDD41C302DB8000A2A2A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B619FDD51C302DB8000A2A2A /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		B619FDD61C302DB8000A2A2A /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		B619FDDD1C302EEA000A2A2A /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		B619FDE11C3036C0000A2A2A /* NSData+GZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+GZIP.swift"; sourceTree = "<group>"; };
+		B619FDE31C3036E6000A2A2A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B619FDE51C3037CC000A2A2A /* zlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = zlib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B619FDE41C3036E6000A2A2A /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +102,7 @@
 		B619FD8A1C302BB4000A2A2A = {
 			isa = PBXGroup;
 			children = (
+				B619FDE31C3036E6000A2A2A /* libz.tbd */,
 				B619FD951C302BB4000A2A2A /* BaseIOSComponent */,
 				B619FDAA1C302BB4000A2A2A /* BaseIOSComponentTests */,
 				B619FDB51C302BB4000A2A2A /* BaseIOSComponentUITests */,
@@ -97,6 +123,8 @@
 		B619FD951C302BB4000A2A2A /* BaseIOSComponent */ = {
 			isa = PBXGroup;
 			children = (
+				B619FDC51C302C5D000A2A2A /* component */,
+				B619FDC61C302C5D000A2A2A /* public */,
 				B619FD961C302BB4000A2A2A /* AppDelegate.swift */,
 				B619FD981C302BB4000A2A2A /* ViewController.swift */,
 				B619FD9A1C302BB4000A2A2A /* Main.storyboard */,
@@ -123,6 +151,87 @@
 				B619FDB81C302BB4000A2A2A /* Info.plist */,
 			);
 			path = BaseIOSComponentUITests;
+			sourceTree = "<group>";
+		};
+		B619FDC51C302C5D000A2A2A /* component */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDD11C302DB8000A2A2A /* SwiftHTTP */,
+				B619FDCA1C302CCB000A2A2A /* webSocket */,
+				B619FDCD1C302CDD000A2A2A /* WSClient.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		B619FDC61C302C5D000A2A2A /* public */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDDF1C3036C0000A2A2A /* Extension */,
+				B619FDDC1C302EC7000A2A2A /* Util */,
+				B619FDC71C302C5D000A2A2A /* BaseController */,
+				B619FDC81C302C5D000A2A2A /* BaseView */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		B619FDC71C302C5D000A2A2A /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		B619FDC81C302C5D000A2A2A /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		B619FDCA1C302CCB000A2A2A /* webSocket */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDCF1C302D42000A2A2A /* SSLSecurity.swift */,
+				B619FDCB1C302CCB000A2A2A /* WebSocket.swift */,
+			);
+			path = webSocket;
+			sourceTree = "<group>";
+		};
+		B619FDD11C302DB8000A2A2A /* SwiftHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDD21C302DB8000A2A2A /* HTTPSecurity.swift */,
+				B619FDD31C302DB8000A2A2A /* Operation.swift */,
+				B619FDD41C302DB8000A2A2A /* Request.swift */,
+				B619FDD51C302DB8000A2A2A /* StatusCode.swift */,
+				B619FDD61C302DB8000A2A2A /* Upload.swift */,
+			);
+			path = SwiftHTTP;
+			sourceTree = "<group>";
+		};
+		B619FDDC1C302EC7000A2A2A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDDD1C302EEA000A2A2A /* CommonUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B619FDDF1C3036C0000A2A2A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDE01C3036C0000A2A2A /* NSDataEXTension */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B619FDE01C3036C0000A2A2A /* NSDataEXTension */ = {
+			isa = PBXGroup;
+			children = (
+				B619FDE51C3037CC000A2A2A /* zlib */,
+				B619FDE11C3036C0000A2A2A /* NSData+GZIP.swift */,
+			);
+			path = NSDataEXTension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B619FDA11C302BB4000A2A2A /* LaunchScreen.storyboard in Resources */,
+				B619FDE61C3037CC000A2A2A /* zlib in Resources */,
 				B619FD9E1C302BB4000A2A2A /* Assets.xcassets in Resources */,
 				B619FD9C1C302BB4000A2A2A /* Main.storyboard in Resources */,
 			);
@@ -257,6 +367,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B619FD991C302BB4000A2A2A /* ViewController.swift in Sources */,
+				B619FDD91C302DB8000A2A2A /* Request.swift in Sources */,
+				B619FDDA1C302DB8000A2A2A /* StatusCode.swift in Sources */,
+				B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */,
+				B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */,
+				B619FDDE1C302EEA000A2A2A /* CommonUtil.swift in Sources */,
+				B619FDD01C302D42000A2A2A /* SSLSecurity.swift in Sources */,
+				B619FDDB1C302DB8000A2A2A /* Upload.swift in Sources */,
+				B619FDE21C3036C0000A2A2A /* NSData+GZIP.swift in Sources */,
+				B619FDCC1C302CCB000A2A2A /* WebSocket.swift in Sources */,
+				B619FDCE1C302CDD000A2A2A /* WSClient.swift in Sources */,
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,9 +520,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 			};
 			name = Debug;
 		};
@@ -411,9 +533,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 			};
 			name = Release;
 		};
