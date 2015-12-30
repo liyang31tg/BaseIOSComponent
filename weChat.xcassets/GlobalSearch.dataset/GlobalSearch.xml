@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page type="KitNode" key="GlobalSearch" title="Global Search" version="2" resetable="yes">
+    <section>
+        <item type="switch" key="GS_SPAY_H5_SEARCH" title="Spay H5 Search" defaultValue ="off"/>
+        <item type="switch" key="BSS_SPAY_H5_SEARCH" title="Spay H5 BSSearch" defaultValue ="off"/>
+        <item type="switch" key="BSS_SPAY_GUIDE_PAGE" title="Spay BSSearch GuidePage" defaultValue ="off"/>
+    </section>
+    
+</page>

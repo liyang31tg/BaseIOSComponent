@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page type="KitNode" key="SIGHT" title="Sight" version="9" resetable="yes">
+    <section>
+        <item type="switch" key="SIGHT_MAINFRAME_SWITCH" title="Open Mainframe Sight" defaultValue="on"/>
+        <item type="switch" key="SIGHT_IPAD_SWITCH" title="Open iPad Sight" defaultValue="off"/>
+        <item type="switch" key="SIGHT_IOS5_SWITCH" title="Open iOS5 Sight" defaultValue="off"/>
+        <item type="switch" key="SIGHT_CAPTURE_F4" title="Using F4 solution" defaultValue="on"/>
+        <item type="switch" key="SIGHT_MSG_HOLE" title="Message hole in chat" defaultValue="on"/>
+        <item type="switch" key="SIGHT_SHAKE_TO_OPEN" title="Shake to open" defaultValue="off"/>
+        <item type="switch" key="SIGHT_CLICK_FOR_PHOTO" title="Click for photo" defaultValue="off"/>
+        <item type="switch" key="SIGHT_PRESTART_RECORDING" title="Pre-start recording" defaultValue="on"/>
+        <item type="switch" key="SIGHT_MAIN_DOWN_ENABLE" title="Enable pulldown to open" defaultValue ="off"/>
+    </section>
+    
+    <section>
+        <page type="KitNode" key="Sight_DraftBox" title="Sight: DraftBox" version="5" resetable="yes">
+            <section title="Global">
+                <item type="switch" key="SIGHT_DRAFT_BOX" title="Draft Box" defaultValue="on"/>
+                <item type="switch" key="SIGHT_DRAFT_BOX_AUTO_SAVE" title="Auto Save Draft" defaultValue="on"/>
+                <item type="value"  key="SD_SAVE_DAYS" title="Item Valide Time" defaultValue="14" maxValue="1000" minValue="1" step="1"/>
+                <item type="switch" key="SIGHT_DRAFT_BOX_SAVE_PREVIEW" title="Save moment sight while play" defaultValue="off"/>
+
+                <page type="KitNode" title="Chat Screen" key="SD_CHAT_SCREEN" version="6">
+                    <section>
+                        <item type="switch" title="Need preview" key="SD_CHAT_ITEM_PREVIEW" defaultValue="off"/>
+                        <item type="value" title="Columns" key="SD_Columns" defaultValue="3" maxValue="4" minValue="1" step="1"/>
+                        <item type="value" title="Columns Padding" key="SD_Columns_Padding" defaultValue="14" maxValue="40" minValue="1" step="1"/>
+                        <item type="value" title="Topbar Height" key="SD_TOPBAR_HEIGHT" defaultValue="44" maxValue="80" minValue="10" step="1"/>
+                        <item type="value" title="Topbar Alpha" key="SD_TOPBAR_ALPHA" defaultValue="1" maxValue="1" minValue="0" step="0.05"/>
+                        <item type="value" title="Edge Padding" key="SD_edge_Padding" defaultValue="7" maxValue="40" minValue="1" step="1"/>
+                        <item type="value" title="Switch Anim Dur." key="SD_Switch_Anim" defaultValue="0.3" maxValue="2" minValue="0.1" step="0.05"/>
+                        <item type="value" title="Switch Anim Fade in delay" key="SD_Switch_Anim_Delay" defaultValue="0.3" maxValue="2" minValue="0.1" step="0.05"/>
+                        <item type="value" title="Cell corner" key="SD_Cell_Corner" defaultValue="6" maxValue="10" minValue="0" step="0.5"/>
+                        <item type="value" title="Container Mask" key="SD_Container_Alpha" defaultValue="0.5" maxValue="11" minValue="0" step="0.05"/>
+                    </section>
+                    <section title="moment draft panel">
+                        <item type="value" title="bounce anim count" key="SD_MA_BOUNCES" defaultValue="1" maxValue="6" minValue="1" step="1"/>
+                        <item type="value" title="bounce anim dur." key="SD_MA_DUR" defaultValue="0.6" maxValue="10" minValue="0" step="0.05"/>
+                        <item type="value" title="bounce anim stiffness" key="SD_MA_STIFF" defaultValue="8" maxValue="11" minValue="1" step="0.05"/>
+                    </section>
+                    <section title="cell">
+                        <item type="value" title="bounce size" key="SD_CELL_BOUNCE_SIZE" defaultValue="0.9" maxValue="2" minValue="0.1" step="0.05"/>
+                        <item type="value" title="bounce dur." key="SD_CELL_BOUNCE_DUR" defaultValue="0.3" maxValue="2" minValue="0" step="0.05"/>
+                    </section>
+                    <section title="save and quit">
+                        <item type="value" title="tips delay" key="SD_SQ_TIPS_DELAY" defaultValue="0.5" maxValue="20" minValue="0.1" step="0.05"/>
+                        <item type="value" title="tips last time" key="SD_SQ_TIPS_LAST_TIME" defaultValue="1.2" maxValue="20" minValue="0.1" step="0.1"/>
+                    </section>
+                </page>
+            </section>
+        </page>
+        
+        <include file="SightDetector.xml"/>
+        <include file="SightGroupGen.xml"/>
+
+        <include file="SightMainScreen.xml"/>
+        <include file="SightChatScreen.xml"/>
+        
+        <page key="SIGHT_GLOBAL" title="Sight: Global"  version="3" resetable="yes">
+            
+            <section title="GLOBAL">
+                <item type="value" key="SIGHT_MAKE_MASK_GAP" title="BlurImage Delay" defaultValue ="4" maxValue="10" minValue="0.5" step="0.1"/>
+                <item type="value" key="SIGHT_MAKE_MASK_ANIM_DUR" title="BlurrImage Anim. Dur." defaultValue ="0.6" maxValue="1.0" minValue="0.1" step="0.1"/>
+                <item type="switch" key="SMSA_CAMERA_BLACK_STYLE" title="Use Black Theme" defaultValue ="on"/>
+                
+                <item type="value" key="SIGHT_BG_Blurred_Radius" title="Blurred Image Blurred Radius" defaultValue ="40" maxValue="80" minValue="0" step="5"/>
+                <item type="value" key="SIGHT_BG_Blurred_Saturation" title="Blurred Image Blurred Saturation" defaultValue ="2.0" maxValue="4.0" minValue="1.0" step="0.1"/>
+                
+                <item type="value" key="SIGHT_ZOOM_FACTOR"    title="Zoom Scale" defaultValue="2.4"  maxValue="4"  minValue="1"  step="0.1"/>
+                <item type="value" key="SIGHT_ZOOM_SPEED"    title="Zoom Speed" defaultValue="15"  maxValue="15"  minValue="1.5"  step="0.5"/>
+                <item type="value" key="SIGHT_CAMERA_MARGIN"  title="Camera Position Translation (Not Working, default is -0.12)"   defaultValue="0.0005"  maxValue="0.2"  minValue="-0.2"  step="0.01"/><!-- cannot set to 0, preventing system focus callback -->
+                
+                <item type="value" key="SIGHT_TRINSTION_DUR" title="Loop Crossfate Dur." defaultValue ="0.3" maxValue="1.0" minValue="0.0" step="0.02"/>
+            </section>
+            
+            <mode key="SIGHT_CAPTURE_PRESET" title="Capture Preset" defaultValue="2">
+                <option title="480 x 640"/>
+                <option title="720p"/>
+                <option title="1080p"/>
+                <option title="AVCaptureSessionPresetPhoto"/>
+                <option title="AVCaptureSessionPresetHigh"/>
+                <option title="AVCaptureSessionPresetMedium"/>
+                <option title="AVCaptureSessionPresetLow"/>
+                <option title="iFrame 540 x 960"/>
+                <option title="iFrame 720p"/>
+                
+            </mode>
+        </page>
+        
+        <page key="Sight_Quality" title="Sight Quality" version="1">
+            <section title="Moment Quality">
+                <item type="value"    key="SightMoment_Video_Width"  title="Resolution Width" defaultValue="320"  maxValue="480"  minValue="192"  step="16"/>
+                <item type="value"    key="SightMoment_Video_Bitrate"  title="Bitrate" defaultValue="480"  maxValue="960"  minValue="320"  step="32"/>
+            </section>
+            
+            <mode key="SIGHT_RECORD_RESOLUTION" title="Chat Capture Resolution" defaultValue="1" >
+                <option title="240 x 176">
+                    <script key="SIGHT_RECORD_RESOLUTION_WIDTH" value="240"/>
+                    <script key="SIGHT_RECORD_RESOLUTION_HEIGHT" value="176"/>
+                </option>
+                <option title="208 x 140 (~16:11)">
+                    <script key="SIGHT_RECORD_RESOLUTION_WIDTH" value="208"/>
+                    <script key="SIGHT_RECORD_RESOLUTION_HEIGHT" value="140"/>
+                </option>
+                <option title="224 x 140">
+                    <script key="SIGHT_RECORD_RESOLUTION_WIDTH" value="224"/>
+                    <script key="SIGHT_RECORD_RESOLUTION_HEIGHT" value="140"/>
+                </option>
+                <option title="240 x 144">
+                    <script key="SIGHT_RECORD_RESOLUTION_WIDTH" value="240"/>
+                    <script key="SIGHT_RECORD_RESOLUTION_HEIGHT" value="144"/>
+                </option>
+            </mode>
+            
+            <section title="CAPTURE RESOLUTION">
+                <item type="value"    key="SIGHT_RECORD_RESOLUTION_WIDTH"  title="Chat Res. Width"   defaultValue="240"  maxValue="240"  minValue="192"  step="16"/>
+                <item type="value"    key="SIGHT_RECORD_RESOLUTION_HEIGHT"  title="Chat Res. Height" defaultValue="176"  maxValue="192"  minValue="124"  step="2"/>
+            </section>
+            
+            <section title="PLAYBACK SETTINGS">
+                <item type="value"    key="SIGHT_RECORD_BITRATE"    title="Chat Bitrate"        defaultValue="320"  maxValue="640"  minValue="240"  step="80"/>
+                <item type="value"    key="SIGHT_FULLPLAY_STRETCH"  title="Full-play Stretch"   defaultValue="1.0"  maxValue="1.3"  minValue="1.0"  step="0.1"/>
+                <item type="value"    key="SIGHT_CELL_WIDTH"        title="Cell width"          defaultValue="0.68"  maxValue="0.8"  minValue="0.3"  step="0.01"/>
+            </section>
+        </page>
+        
+        <page key="SIGHT_TIMELINE" title="Sight: TimeLine" version="1" resetable="yes">
+            
+            <section>
+                <item type="value" key="SIGHT_TIMELINE_CELL_VIEW_SIZE_PERCENTAGE" title="SightViewSizePercentage" defaultValue ="1.0" maxValue="2.0" minValue="0.5" step="0.05"/>
+            </section >
+        </page>
+        
+    </section>
+</page>

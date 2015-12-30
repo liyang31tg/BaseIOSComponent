@@ -1,0 +1,1211 @@
+
+#commonTableCellMargin
+{
+    left:20;
+    /* 6p系统默认是20 */
+}
+
+/*公众号会话单文章视图*/
+#reader_node_view {
+    
+    reader_view_width: 390;
+    item_inside_width: 358;
+    /*  原来150  */
+    cover_image_height: 200;
+    
+}
+
+/* 支付和安全相关 */
+#attributed_reader_message_node_view  {
+    content_view_width: 390;
+    content_view_left_inset: 10;
+}
+
+
+/*公众号会话多文章视图*/
+#multi_reader_node_view {
+    
+    reader_view_width: 390;
+    item_inside_width: 358;
+    reader_top_new_height: 200 "dynamic";
+    
+}
+
+/*公众号多文章视图子按钮*/
+#read_item_view {
+    
+    reader_top_new_height: 200 "dynamic";
+    reader_view_width: 390;
+    item_inside_width: 358;
+    
+}
+
+#hardward_message_node_view {
+    node_view_width: 380;
+    node_view_height: 171;
+    
+    notify_node_width: 380;
+    notify_node_height: 73;
+}
+
+#WCListHeaderView {
+    /*朋友圈顶部nickname*/
+    nick_label_font_size: 21;
+}
+#WCTimeLineViewController{
+    timeline_cell_bottom_margin : 11;
+    timeline_abtest_cell_bottom_margin : 5;
+    input_view_textview_height : 34;
+}
+/* 朋友圈 边距由原来的9变成20 +94-22=+72 */
+#WCTimelineCellView {
+    /*正文大小*/
+    default_font_size : 15.5;
+    /*正文长度*/
+    text_line_width : 322;
+    /*正文文本高度*/
+    default_lable_height : 15.5;
+    /*头像大小*/
+    headimage_view_len: 43;
+    
+    more_action_floatView_width : 370;
+}
+/* 个人相册 */
+#WCListViewRowContentView {
+    content_view_width : 303;
+    default_text_font_size: 15.5;
+    default_text_line_height : 20;
+}
+
+/*朋友圈详情*/
+#WCComentDetailViewControllerFB {
+    comment_view_width : 390;
+    /*  详情页每行点赞头像个数  */
+    comment_head_count_perline : 9;
+}
+
+/* 朋友圈的图片分享相关 */
+#WCTimeLineCellMediaContentView {
+    multi_image_len : 86;
+    image_gird_step_len : 5;
+    image_size_max_len : 180;
+    image_size_superwide_max_len : 268;
+    image_size_superheight_max_len : 89;
+    image_size_superheight_min_len : 32;
+    /*template news*/
+    link_title_font_size: 14.5;
+    link_area_width : 322;
+    /* 朋友圈分享页面的media cell， 320下是290  */
+    forward_link_area_width : 380;
+}
+
+/* 新晒一晒 */
+#WCContentItemViewTemplateNewSight {
+    /*  此处按比例缩放的 原来200  */
+    cover_image_width: 246;
+    /*  此处按比例缩放的 原来150  */
+    cover_image_height: 184;
+    moment_edit_player_width : 120;
+    commit_complete_offset : 168;
+    commit_complete_offset_horizontal : 72;
+    chat_bob_width : 0.66;
+}
+/* 朋友圈评论 */
+#WCTimeLineCommentCellView {
+    /*评论宽度（包括了上面的评论左右内间距）*/
+    comment_view_width: 322;
+    /*赞块的上下内间距*/
+    like_content_margin: 4.5;
+    /*赞块的左右内间距*/
+    like_content_left_margin: 9;
+    comment_content_margin_left: 9;
+}
+/* 消息节点 */
+#message_node_view
+{
+    /*  mail节点单独计算  */
+    mail_message_node_width : 344;
+    /*  原来是120 等比放大  */
+    message_node_imageNode_maxSizeLimit : 155;
+}
+
+/* 主界面 */
+#mainframe_table{
+    /*主会话列表项高度*/
+    cell_height: 68;
+   
+    /*顶部offset*/
+    cell_headimg_top_margin:9;
+    /*headimg size*/
+    cell_headimg_size: 50 50;
+    /*left margin*/
+    cell_headimg_left_margin:10;
+    
+    /*   用户名fontsize */
+    cell_msglabel_textsize:17;
+    
+    cell_msglabel_top_margin:10.5;
+    cell_labelmsg_bottom_margin:10.5;
+    /*right margin*/
+    cell_timelabel_right_margin:10;
+    /*chatnotpush right margin*/
+    cell_chatnotpushimg_right_margin:10;
+}
+
+/* 聊天界面背景图选择界面 */
+#ChatBackgroundView {
+    cell_img_width : 129;
+    cell_img_height : 129;
+}
+
+#GameCenterImg {
+    imgcell_img_width : 394;
+    imgcell_img_height : 118;
+    imgcell_height: 138;
+}
+
+#WXTalkMain {
+    /*  原来48 现+20  */
+    headlist_top : 75;
+
+    headlist_width : 400;
+    headlist_height : 145;
+    /*  262 + 55/2  */
+    led_left : 309;
+    /*  原来265 +  84 */
+    push_button_top : 349;
+    /*   参加个数的左边距 */
+    headlist_membercount_left : 38;
+    /*  参加个数的下边距  */
+    headlist_label_bottom_margin : 20;
+}
+
+/* 全屏提示界面 */
+#online_device_info {
+    /*  上边的设备图片的上边距  */
+    deviceViewY : 222;
+}
+
+/* 聊天界面 名片 */
+#share_card_view  {
+    card_width: 289;
+    card_label_max_width: 243;
+}
+
+/* 聊天界面 卡券 */
+#app_card_view {
+    view_width: 289;
+    tip_label_max_width: 243;
+}
+
+/* 聊天界面 位置 */
+#location_message_node_view {
+    location_view_width: 267;
+    lacation_view_height: 150;
+    label_background_width: 260.5;
+    info_label_y_counting: 126;
+}
+
+/* 聊体界面 链接 */
+#url_message_node_view {
+    background_image_width: 278;
+    title_label_width: 237;
+    detail_label_width: 172;
+}
+
+/* 聊天界面 另一种链接 */
+#app_default_node_view {
+    title_label_width: 237;
+    view_width: 278;
+    detail_label_width: 172;
+}
+
+/* 聊天界面 文件 */
+#file_message_node_view {
+    background_image_width: 278;
+}
+
+#message_load_count{
+    first_page_msg_count : 12 ;
+}
+
+/* 聊天界面 商品详情 */
+#wcproduct_message_node_view
+{
+    view_width: 289;
+    tip_label_max_width: 243;
+    node_view_showlabel_font:12;
+    node_view_showlabel_height:20;
+}
+
+#AppNoteNodeView {
+    /*  +32+22  */
+    record_title_max_width : 237;
+    record_bg_width : 262;
+    record_bkg_left_margin : 8;
+}
+
+#AppRecordNodeView {
+    /*  +32+22  */
+    record_title_max_width : 237;
+    record_des_max_width : 172;
+    record_nomedia_des_max_width : 237;
+    record_info_max_width : 172;
+    record_bg_width : 262;
+}
+
+#RecordDetailView {
+    image_width : 316;
+    subtitle_max_height : 370;
+}
+
+#WCCommitViewController {
+    gridimg_stepWidth : 8.7;
+    gridimg_size:86.6 86.6;
+}
+
+/* 输入框附件栏 */
+#input_tool_view_attachment {
+    
+    attachment_view_margin : 36;
+    
+}
+
+#MMTipsView {
+    background_image_width : 300;
+    title_margin_top : 25;
+    title_textsize : 18;
+    title_color : "#000000";
+    img_margin_top : 20;
+    
+    content_margin_top : 15;
+    content_margin_left : 20;
+    content_textsize : 15;
+    content_color : "#888888";
+    
+    line_margin_top : 25;
+    line_color : "#d2d3d5";
+    
+    button_height : 50;
+    button_text_color : "#09bb07";
+    button_textsize : 18;
+    
+    bg_image: "popup_bg.png" 10 10  ;
+}
+
+/*  通讯录界面 */
+#contact_head_image{
+    hello_cell_headview_maxcount : 5;
+}
+
+/*手势密码*/
+#pattern_lock_view {
+    circle_radius : 36;
+    circle_gap : 40;
+    
+    tipsView_y : 50;
+    tipsView_bottom_offset : 55;
+}
+
+#MMTipsView {
+    background_image_width : 320;
+}
+
+#font_set
+{
+    alllevel : 15 16 17.5 19 21;
+    chatLevel : 15 16 17.5 19 23 26;
+}
+#login_last_user_view
+{
+    textBackViewY : 24;
+    
+}
+
+#brand_contact_profile {
+    intro_left_label_margin : 15;
+}
+
+#VoipView
+{
+    hangupButtonDesOffsetY : 8;
+    voiceButtonDesOffsetY : 1;
+    footerActionButtonWidth : 66.7;
+    footerActionButtonHeight : 66.7;
+    voiceActionButtonWidth : 35;
+    voiceActionButtonHeight : 35;
+    toastWindowMarginBottom : 250;
+    toastWindowMarginBottomAdpatAudioMode : 240;
+    leftButtonMarginLeft : 80;
+    rightButtonMarginRight : 80;
+    footerButtonMarginButtom : 27;
+    secondFooterButtonMarginBottom : 155;
+    timerLabelMarginBottom : 145 dynamic;
+}
+
+
+#device_rank_view {
+    Rank_View_Table_Header_height : 360;
+
+    tableheader_height : 420;
+    header_headImage_size : 48;
+}
+
+#device_profile_view {
+    tableheader_height : 360;
+    
+    step_content_height : 285;
+    step_values_height : 200;
+    steps_time_font_size : 12;
+}
+
+#CustomEmoticonDetailViewController
+{
+    gridViewItemWidth : 82.8
+}
+
+/* 企业红包收取页面样式 */
+#EnterpriseLuckyMoneyRate
+{
+    x_rate : 1;
+    y_rate : 1;
+}
+
+#EnterpriseLuckyMoneyBaseView
+{
+    frame_width : 337;
+    frame_height : 470;
+}
+
+#EnterpriseLuckyMoneyIconView
+{
+    view_width : 60;
+    view_height : 60;
+    top_margin : 47;
+}
+
+#EnterpriseLuckyMoneyNickNameView
+{
+    top_margin : 13;
+    font_width : 20;
+}
+
+#EnterpriseLuckyMoneyStatusMessView
+{
+    top_margin : 14;
+    font_width : 16;
+}
+
+#EnterpriseLuckyMoneyWishView
+{
+    top_margin : 30;
+    left_margin : 46;
+    font_width : 20;
+}
+
+#EnterpriseLuckyMoneyOpenView
+{
+    top_margin : 290;
+    view_width : 110;
+    view_height : 115;
+    font_width : 20;
+}
+
+#EnterpriseLuckyMoneyPacketView
+{
+    top_margin : 289;
+}
+
+#EnterpriseLuckyMoneyMaskView
+{
+    view_height : 289;
+}
+
+/* 企业红包收取完成页面样式 */
+#EnterpriseLuckyMoneyShareNickNameView
+{
+    top_margin : 25;
+    font_width : 17;
+}
+
+#EnterpriseLuckyMoneyShareFeeView
+{
+    top_margin : 20;
+    font_width : 80;
+}
+
+#EnterpriseLuckyMoneyShareHintView
+{
+    top_margin : 340;
+    font_width : 14;
+}
+
+#EnterpriseLuckyMoneyShareButtonView
+{
+    top_margin : 10;
+    left_margin : 40;
+    view_height : 44;
+}
+
+#EnterpriseLuckyMoneyYenView
+{
+    left_margin : 8;
+    top_margin : 230;
+}
+
+#EnterpriseLuckyMoneyAppFollowView
+{
+    bottom_margin : 23;
+    checkbox_width : 18;
+    font_width : 16;
+    between_margin : 4;
+}
+
+/* 企业红包分享页面样式 */
+#EnterpriseLuckyMoneyShareIconView
+{
+    top_margin : 90;
+    view_width : 50;
+    view_height : 60;
+}
+
+#EnterpriseLuckyMoneyShareNickNameView
+{
+    bottom_margin : 20;
+    font_width : 17;
+}
+
+#EnterpriseLuckyMoneyNicknameView
+{
+    top_margin : 124;
+    font_width : 14;
+}
+
+#EnterpriseLuckyMoneyHintTextView
+{
+    top_margin : 193;
+    font_width : 24;
+    top_margin_1 : 247;
+    font_width_1 : 18;
+    left_margin : 6;
+}
+
+#EnterpriseLuckyMoneyShareBtnView
+{
+    top_margin : 323;
+    left_margin : 30;
+    view_height : 45;
+}
+
+#EnterpriseLuckyMoneyBalanceTextView
+{
+    top_margin : 3;
+}
+
+/* 节日红包显示样式 */
+#FestivalLuckyMoneyRate
+{
+    x_rate : 1;/*1.462;*/
+    y_rate : 1;/*1.432;*/
+}
+
+#FestivalLuckyMoenyBaseView
+{
+    view_height : 471;
+    view_width : 325;
+}
+
+#FestivalLuckyMoneyBiaoWordView
+{
+    left_margin : 78;
+    top_margin : 43;
+    view_height : 110;
+}
+
+#FestivalLuckyMoneySealView
+{
+    view_height : 25;
+}
+
+#FestivalLuckyMoneyMoneyView
+{
+    top_margin : 199;/*201*/;
+    font_width : 67;
+    top_margin_1 : 217;
+    top_margin_noscroll : 213;
+    top_margin_noscroll_1 : 211;
+}
+
+#FestivalLuckyMoneyYuanView
+{
+    top_margin : 243; /*235*/;
+    top_margin_1 : 260;/*257;*/
+    top_margin_2 : 259;/*257*/
+    top_padding : 50;
+    top_padding_1 : 46;
+    top_padding_2 : 50;
+    top_padding_3 : 48;
+    left_margin : 8;
+    left_margin_1 : 1;
+    font_width : 17;
+}
+
+#FestivalLuckyMoneyWishView
+{
+    top_margin : 173;/*167*/;
+    top_margin_1 : 193;
+    font_width : 22;
+    font_width_1 : 22;
+}
+
+#FestivalLuckyMoneyOpenView
+{
+    top_margin : 314;
+    font_width : 22;
+}
+
+#FestivalLuckyMoneyTitleLabel
+{
+    top_margin : 377;
+    font_width : 12;
+}
+
+#FestivalLuckyMoneyNianWordView
+{
+    top_margin : 91;
+    left_margin : 78;
+    view_height : 100;
+    top_margin_1 : 325;
+}
+
+#FestivalLuckyMoneySuccessView
+{
+    top_margin : 137;
+}
+
+#FestivalLuckyMoneyHeadview
+{
+    view_height : 60;
+    view_width : 60;
+    top_margin : 79;
+}
+
+#FestivalLuckyMoneyNickNameView
+{
+    top_margin : 143;
+    font_width : 17;
+}
+
+#FestivalLuckyMoneyReceiveStatusView
+{
+    top_margin : 421;
+    top_margin_1 : 420;
+    between_margin : 3;
+    font_width : 16;
+}
+
+#FestivalLuckyMoneyCancelBtnView
+{
+    top_margin : 18;
+    left_margin : 18;
+}
+
+#FestivalLuckyMoneyC2CNodeView
+{
+    nian_top_margin : 72;
+    word_top_margin : 149;
+    left_margin_1 : 29;
+    right_margin_1 : 17;
+    left_margin_2 : 21;
+    right_margin_2 : 22;
+    bottom_line_width : 19;
+    bottom_line_left_padding_1 : 4;
+    bottom_line_left_padding_2 : -3;
+}
+
+/* Festival lucky money sender view. */
+#FestivalLuckyMoneySenderNianWordView
+{
+    top_margin : 94;
+}
+
+#FestivalLuckyMoneySenderWishView
+{
+    top_margin : 191;
+    font_width : 22;
+}
+
+#FestivalLuckyMoneySenderMoneyView
+{
+    top_margin : 213;
+    font_width : 67;
+}
+
+#FestivalLuckyMoneySenderYuanView
+{
+    top_margin : 258;
+    font_width : 17;
+}
+
+#ShakeCardDetailView
+{
+    background_view_width : 325;
+    title_font : 24;
+}
+
+#NewYearSweetTimeView
+{
+    wording_img_width : 293;
+    wording_img_top : 45;
+    photo_img_width : 375;
+    photo_img_bottom : 60;
+    tip_font : 16;
+}
+
+#NewYearShowListView
+{
+    tableview_top : 139;
+    tableview_height : 428;
+    tableview_width : 375;
+    
+    min_height : 63;
+    
+    num_top : 13.0;
+    num_left : 15;
+    num_font : 10;
+    num_width : 30;
+    
+    title_top : 12;
+    title_left : 55;
+    title_font : 20;
+    
+    performer_top : 43;
+    performer_font : 15;
+    
+    status_top : 13;
+    status_font : 13;
+    
+    right_margin : 13;
+    
+    bottom_margin : 10;
+}
+
+#NewYearShakeFriendView
+{
+    head_img_top_margin : 156;
+    head_img_width : 85;
+    nickname_top_margin : 40;
+    nickname_font : 24;
+    distance_top_margin : 27;
+    distance_font : 20;
+    button_top_margin : 53;
+    button_size : 300 44;
+}
+
+#NewYearFamilyPhotoEntranceViewBegin
+{
+    bg_img : "NewYearShake_FamilyPhoto_Draw.jpg";
+    desc_label_top_margin : 9;
+    desc_label_font : 18;
+    button_top_margin : 63;
+    button_size : 300 44;
+    button_font : 18;
+    auth_label_top_margin : 11;
+    auth_label_font : 16;
+}
+
+#NewYearFamilyPhotoEditView
+{
+    bg_img : "NewYearShake_FamilyPhoto_Edit_top.jpg";
+    comment_top_margin : 12;
+    comment_left_margin : 14;
+    comment_font : 19;
+    thumb_top_margin : 185;
+    thumb_left_margin : 19;
+    thumb_width : 79;
+    count_label_font : 16;
+    split_line_top_margin : 10;
+}
+
+#NewYearFamilyPhotoEntranceViewFinish
+{
+    bg_top_img : "NewYearShake_FamilyPhoto_Show_top.jpg";
+    photo_frame_top_margin : 73;
+    photo_frame_left_margin : 24;
+    photo_frame_height : 395;
+    photo_top_margin : 13;
+    photo_left_margin : 13;
+    watermark_width : 91;
+    watermark_height : 91;
+    watermark_right_margin : 8;
+    watermark_bottom_margin : 7;
+    head_img_top_margin : 5;
+    head_img_width : 35;
+    nickname_font : 18;
+    nickname_left_margin : 8;
+    comment_top_margin : 14;
+    comment_bottom_margin : 12;
+    comment_font : 15;
+    shadow_left_margin : 5;
+    shadow_height : 8;
+    bottom_img : "NewYearShake_FmailyPhoto_Show_bottom.jpg";
+    bottom_img_bottom_margin : 12;
+    bottom_label_bottom_margin : 19;
+    bottom_label_font : 16;
+    bottom_label_color : "#BBB29B";
+    sponsor_area_height : 89;
+    save_btn_top_margin : 11;
+    save_btn_size : 115 30;
+    save_label_font : 15;
+}
+
+#NewYearShakeFrameworkView
+{
+    sponsor_area_height : 60;
+    sponsor_icon_height : 33;
+    sponsor_slogan_font : 16;
+}
+
+#NewYearHBWaitView
+{
+    hb_top : 120;
+    hb_width : 153;
+    
+    tip_top : 53;
+    tip_font_size : 24.0;
+    
+    try_again_top : 53;
+    try_again_font_size : 30.0;
+    try_again_bottom : 21;
+    rest_count_font_size : 20.0;
+}
+
+#NewYearPostCardView
+{
+    head_bg_top : 90;
+    head_bg_width : 127;
+    head_img_top : 26;
+    head_img_width : 73;
+    content_height : 365;
+    name_font : 24.0;
+    name_top : 23;
+    remark_font : 16.0;
+    remark_top : 9;
+    distance_font : 20.0;
+    distance_top : 40;
+    btn_top : 36;
+    btn_left : 17;
+}
+
+#NewYearCardEditView
+{
+    card_view_left : 40;
+    card_view_height : 486;
+    camera_top : 113;
+    select_tip_font : 16;
+    
+    
+    head_width : 30;
+    head_top : 313;
+    head_left : 13;
+    bless_bg_left : 47;
+    bless_bg_width : 274;
+    bless_bg_height : 83;
+    
+    name_font : 16;
+    name_left : 16;
+    name_top : 9;
+    
+    bless_text_top : 0;
+    bless_text_left : 12;
+    bless_text_font : 16;
+    
+    location_left : 64;
+    location_top : 9;
+    location_font : 14;
+}
+
+#NewYearShakeMainView
+{
+    animation_height_up : 101;
+    animation_height_down : 101;
+}
+
+#input_tool_view_tool {
+    /* 其他情况都是2.5，6p下会模糊，改为2 */
+    record_btn_topMargin : 2;
+    tool_view_voiceBtn_height : 46;
+}
+
+#WhatsNew { /* what's new */
+    
+    enterbtn_bottom : 90;
+    enterbtn_width : 273;
+    enterbtn_height : 56;
+    enterbtn_font : 20;
+    page1_qr_size : 200;
+    page1_qr_b_y : 133;
+    page1_text_off_y : 43;
+    page1_text_font : 24;
+    
+    page2_head_size : 116;
+    page2_head_y : 176;
+    page2_name_font : 24;
+    page2_name_off_y : 53;
+    page2_text1_off_y : 23;
+    page2_text1_font : 24;
+}
+
+
+
+#WCRedEnvelopesReceiveHomeView { /* #WCRedEnvelopesReceiveHomeView */
+    
+    bg_image_view_width : 336.6;
+    bg_image_view_height : 460;
+    
+    head_bottom_image_view_height : 64.5;
+    
+    head_image_view_y : 40;
+    head_image_view_width : 60;
+    head_image_view_height : 60;
+    
+    nick_name_title_y_margin : 16.6;
+    nick_name_title_font : 20;
+    nick_name_title_color : "#ffffff";
+    
+    status_tips_title_y_margin : 6.66;
+    status_tips_title_font : 16;
+    
+    wishing_tips_y_margin : 26;
+    wishing_tips_title_font : 20;
+    
+    bg_mask_image_height : 288.6;
+    
+    open_button_y_margin : 286.8;
+    open_button_width : 110;
+    open_button_height : 115;
+    
+    open_desc_title_font : 20;
+    
+    open_list_bottom_margin : 20;
+    open_list_font : 15;
+}
+
+#ExtraDeviceLogin
+{
+    deviceViewY : 222;
+    confirm_button_font : 14;
+    confirm_button_offset : 1;
+}
+
+#fts_common {
+    education_image_top_margin : 60;
+    education_icon_hor_space : 55;
+}
+
+#text_actionSheet
+{
+    button_height : 54 dynamic;
+    cancel_btn_top_offset : 7 dynamic;
+}
+
+#PhotoActionSheet
+{
+    /*
+     height = cell_len + offset * 2
+     修改时，要同步修改哦~
+     */
+    photo_collection_view_height : 190;
+    photo_collection_view_cell_len : 184;
+    photo_collection_view_top_offset : 3;
+}
+
+#widget_tipsbar_base{
+    /*左边主要图标*/
+    icon_main_right_margin: 15 dynamic;
+    icon_main_left_margin: 15 dynamic;
+}
+
+#PayTouchIDConfirmView
+{
+    bg_width : 270;
+    
+    title_font : 15;
+    subtitle_font : 12;
+    btn_font : 15;
+    
+    img_top : 17;
+    title_top : 11;
+    subtitle_top : 10;
+    btn_top : 27;
+    btn_height : 43;
+}
+
+#SnsABTestTip
+{
+    sns_abtest_tip_default_margin_left : 12;
+    sns_abtest_tip_default_margin_right : 12;
+    sns_abtest_tip_default_button_padding : 28;
+    sns_abtest_tip_default_text_font_size : 14;
+    sns_abtest_tip_default_icon_content_padding : 8;
+    
+    sns_abtest_tip_actionlist_margin_left : 15;
+    sns_abtest_tip_actionlist_margin_right : 15;
+    sns_abtest_tip_actionlist_icon_content_padding : 10;
+}
+
+#CardItemView
+{
+    card_left : 7.0;
+	top_height : 7.0;
+	normal_height : 136.0;
+	tooth_height : 3.0;
+	bottom_mask_height : 34.0;
+	title_font : 13.0;
+	title_2_sub : 8.0;
+	sub_title_font : 23.0;
+	bottom_font : 13.0;
+	logo_width : 54.0;
+	logo_left : 14.0;
+	logo_top : 21.0;
+    head_width: 54.0;
+    head_left : 14.0;
+    entry_title_font : 20.0;
+    entry_sub_title_font : 16.0;
+}
+
+#CardDetailView
+{
+    table_left_margin : 10.0;
+    table_right_margin : 10.0;
+}
+
+#CardCodeView
+{
+    begin_y : 60.0;
+    bottom_margin : 150.0;
+    dashline_margin : 35.0;
+    checkbox_fit_y  : 35.0;
+    tips_fit_y : 100.0;
+    qrcode_img_height : 168.0;
+}
+
+#CardConsumedView
+{
+    icon_start_y : 105.0;
+    top_bg_view_height : 390.0;
+    bottom_bg_view_height : 205.0;
+}
+
+#BizMainHeaderView
+{
+    height : 175;
+    padding-top :50;
+}
+
+#WifiView
+{
+    large-space: 30;
+    small-space: 18;
+    notice-space : 17.5;
+    bottom-space : 45;
+    button-height : 40;
+    green-button-width : 213;
+    white-button-width : 280;
+    
+    new-top-space : 106;
+    new-logo-size : 83;
+    new-notice-space : 8.5;
+    new-button-space : 16.5;
+    new-brand-space : 16.5;
+    new-button-top-space : 416;
+    new-logo-brandname-space : 27;
+    wifi-watermark-width : 130;
+    wifi-watermark-height : 20;
+    wifi-watermark-bottom-space : 16.5;
+    
+    guidepage-top-space : 167;
+    guidepage-notice-space : 33;
+    guidepage-default-font : 16.0;
+    guidepage-ssid-large-font : 33.0;
+    guidepage-ssid-normal-font : 24.0;
+    guidepage-ssid-small-font : 20.0;
+    guidepage-button-space : 103;
+    guidepage-bottom-space : 17;
+    guidepage-wifiName-left-space : 26;
+    guidepage-botton-top-space : 417;
+    
+    privacy-font : 13.0;
+    bottom_notice-font : 10.0;
+    
+    new-main-large-font : 33.0;
+    new-main-small-font : 26.5;
+    new-sub-font : 15.0;
+}
+
+#WCFacingReceivePayerView { /* #WCRedEnvelopesReceiveHomeView */
+    
+    totalHeight : 60;
+    
+    header_image_width : 35;
+    header_image_height : 35;
+    
+    total_money_height : 50;
+    total_money_tips_font : 17;
+    total_money_money_font : 15;
+    
+    header_nickname_rightmargin : 10;
+    
+    payer_nickname_font : 17;
+    
+    status_font : 17;
+    money_font : 25;
+    
+    payer_name_font:14;
+    status_label_font:14;
+    money_label_font:15;
+}
+
+#chargeMobileView
+{
+    input_phone_view_height : 80;
+    input_phone_view_select_address_top_margin : 21;
+    desc_label_width: 140;
+}
+
+#PreviewEmotionRecommendedCell
+{
+    cell_height: 110 dynamic;
+}
+
+#chargeMobileView
+{
+    input_phone_view_height : 80;
+    input_phone_view_select_address_top_margin : 21;
+}
+
+#PreviewEmotionRecommendedCell
+{
+    cell_height: 110 dynamic;
+}
+
+#Emoticon_Board_Store_Recommend_View
+{
+    cell_left_margin:20;
+    cell_top_margin:15;
+    cell_width :100;
+    cell_height: 125 dynamic;
+    
+    cell_width_minus: 45;
+}
+
+#EmotionStoreHomePageHotCell
+{
+    cell_image_view_padding: 15;
+    cell_image_view_top_padding: 15;
+    
+    cell_height: 165 ;
+    cell_label_width: 70 ;
+}
+
+#WCOutView {
+    /* dial pad */
+    dialPadTopMargin : 182;
+    padBtnDiameter : 75;
+    dialPadVerticalPadding : 15;
+    dialPadHorizontalPadding : 27;
+    callBtnMarginKeyPad: 44;
+    
+    /* dial view */
+    inputArea_marginTop: 54;
+    inputArea_phoneNumber_marginBottom: 10;
+    inputArea_phoneNumber_fontsize : 36;
+    inputArea_name_fontsize : 20;
+
+    /*calling view*/
+    headImageMarginTop: 75;
+    userLabelMarginTopWhenNoHeadImage: 57;
+    
+    /*account  view*/
+    headerViewHeight: 180;
+    balanceFontSize: 18;
+    remainingTimeFontSize :50;
+    headerImg : "wcoutHeader.png";
+    balanceTopMargin : 12;
+    remainingTimeTopMargin : 14;
+    invalidDateTopMargin:16;
+    invalidDateFontSize: 14;
+    productBtnTitleSize:26;
+
+}
+
+#NewMultiSelectViewController
+{
+    select_display_view_height : 136;
+    
+    select_display_item_topOffset1 : 28;
+    select_display_item_topOffset2 : 10;
+    select_display_item_leftOffset1 : 16;
+    select_display_item_leftOffset2 : 25;
+    select_display_item_interSpacing1 : 20;
+    select_display_item_interSpacing2 : 25;
+    select_display_item_lineSpacing1 : 100;
+    select_display_item_lineSpacing2 : 10;
+    
+    select_viewController_rightBarButton_margin : -14;
+}
+
+#MultiTalkContactCell
+{
+    head_image_size : 80;
+}
+
+#MultiTalkTalkingOperateView
+{
+    title_margin_top : 30;
+    title_margin_left : 30;
+    title_height : 30;
+    title_font_size : 24;
+    title_text_color : "#ffffff";
+    
+    timer_margin_left : 30;
+    timer_font_size : 15;
+    timer_text_color : "#ffffff";
+    
+    minimize_button_center_margin_left : 60;
+    minimize_button_center_margin_bottom : 125;
+    
+    hangup_button_center_margin_bottom : 76;
+    hangup_button_height : 75;
+}
+
+#MultiTalkBeforeTalkingOperateView
+{
+    hangup_button_margin_center : 50;
+    hangup_button_center_margin_bottom : 76;
+    hangup_button_height : 75;
+}
+
+#MusicPlayerMainViewController
+{
+    bottom_bg_height : 200;
+    shade_Gradient_height : 285;
+    
+    single_lyric_height_between_cover:60;
+    
+    first_page_cover_height : 500;
+    second_page_cover_height : 180;
+    /*cover_image_offset = (first_page_cover_height-second_page_cover_height)/2 */
+    cover_image_offset : 160;
+    
+    table_view_height_to_top : 260;
+    lyrics_table_view_height : 315;
+    max_table_view_height : 315;
+    
+}
+
+#app_emoticon_shared_message_node_view {
+    background_view_width: 278;
+    title_label_width: 237;
+    detail_label_width: 172;
+}

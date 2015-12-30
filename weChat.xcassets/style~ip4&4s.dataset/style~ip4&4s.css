@@ -1,0 +1,338 @@
+#NewYearSweetTimeView
+{
+    wording_img_width : 180;
+    wording_img_top : 15;
+    photo_img_width : 245;
+    photo_img_bottom : 40;
+    tip_font : 13;
+}
+
+#NewYearShowListView
+{
+    tableview_top : 110;
+    tableview_height : 217;
+}
+
+#NewYearShakeFriendView
+{
+    head_img_top_margin : 80;
+    head_img_width : 75;
+    nickname_top_margin : 20;
+    nickname_font : 17;
+    distance_top_margin : 10;
+    distance_font : 14;
+    button_top_margin : 35;
+    button_size : 232 45;
+}
+
+#NewYearFamilyPhotoEntranceViewBegin
+{
+    bg_img : "NewYearShake_FamilyPhoto_Draw_4s.jpg";
+    desc_label_top_margin : 9;
+    desc_label_font : 12;
+    button_top_margin : 28;
+    button_size : 182 36;
+    button_font : 14;
+    auth_label_top_margin : 7;
+    auth_label_font : 12;
+}
+
+#NewYearFamilyPhotoEditView
+{
+    bg_img : "NewYearShake_FamilyPhoto_Edit_top.jpg";
+    comment_top_margin : 12;
+    comment_left_margin : 10;
+    comment_font : 14;
+    thumb_top_margin : 150;
+    thumb_left_margin : 15;
+    thumb_width : 60;
+    count_label_font : 12;
+    split_line_top_margin : 10;
+}
+
+#NewYearFamilyPhotoEntranceViewFinish
+{
+    bg_top_img : "NewYearShake_FamilyPhoto_Show_top_4s.jpg";
+    photo_frame_top_margin : 39;
+    photo_frame_left_margin : 43;
+    photo_frame_height : 245;
+    photo_top_margin : 8;
+    photo_left_margin : 10;
+    watermark_width : 82;
+    watermark_height : 82;
+    watermark_right_margin : 3;
+    watermark_bottom_margin : 5;
+    head_img_top_margin : 3;
+    head_img_width : 25;
+    nickname_font : 13;
+    nickname_left_margin : 6;
+    comment_top_margin : 6;
+    comment_bottom_margin : 5;
+    comment_font : 12;
+    shadow_left_margin : 0;
+    shadow_height : 0;
+    bottom_img : "";
+    bottom_label_bottom_margin : 21;
+    bottom_label_font : 12;
+    bottom_label_color : "#892518";
+    sponsor_area_height : 67;
+    save_btn_top_margin : 6;
+    save_btn_size : 100 22;
+    save_label_font : 11;
+}
+
+#NewYearShakeFrameworkView
+{
+    sponsor_area_height : 45;
+    sponsor_icon_height : 25;
+    sponsor_slogan_font : 13;
+}
+
+#NewYearHBWaitView
+{
+    hb_top : 50;
+    hb_width : 100;
+    
+    tip_top : 35;
+    tip_font_size : 17.0;
+    
+    try_again_top : 20;
+    try_again_font_size : 24.0;
+    try_again_bottom : 6;
+    rest_count_font_size : 16.0;
+}
+
+#NewYearPostCardView
+{
+    head_bg_top : 12;
+    head_bg_width : 72;
+    head_img_top : 15.5;
+    head_img_width : 40;
+    content_height : 235;
+    name_font : 17.0;
+    name_top : 16;
+    remark_font : 13.0;
+    remark_top : 5;
+    distance_font : 14.0;
+    distance_top : 16;
+    btn_top : 17;
+    btn_left : 2;
+}
+
+#NewYearCardEditView
+{
+    card_view_left : 13;
+    card_view_height : 437;
+    camera_top : 100;
+    select_tip_font : 12;
+    
+    head_width : 30;
+    head_top : 280;
+    head_left : 10;
+    bless_bg_left : 45;
+    bless_bg_width : 240;
+    bless_bg_height : 77;
+    
+    name_font : 14;
+    name_left : 20;
+    name_top : 9;
+    
+    bless_text_top : 0;
+    bless_text_left : 14;
+    bless_text_font : 14;
+    
+    location_left : 65;
+    location_top : 8;
+    location_font : 14;
+}
+
+#WhatsNew { /* what's new */
+    
+    enterbtn_bottom : 40;
+    page1_qr_b_y : 75;
+    page1_text_off_y : 40;
+    page1_text_font : 19;
+    
+    page2_head_size : 90;
+    page2_head_y : 130;
+    page2_name_font : 19;
+    page2_name_off_y : 40;
+    page2_text1_off_y : 10;
+    page2_text1_font : 19;
+}
+
+#NewYearShakeMainView
+{
+    animation_height_up : 75;
+    animation_height_down : 80;
+}
+
+#fts_common {
+    education_image_top_margin : 40;
+    education_icon_hor_space : 30;
+}
+
+#PhotoActionSheet
+{
+    /*
+     height = cell_len + offset * 2
+     修改时，要同步修改哦~
+     */
+    photo_collection_view_height : 150;
+    photo_collection_view_cell_len : 144;
+    photo_collection_view_top_offset : 3;
+}
+
+#reg_upload_addressbook_more
+{
+    detail_big_y : 15;
+    detail_small_y : 5;
+}
+
+#login_common
+{
+    nextbtn_topMargin: 20;
+    title_topMargin: 12;
+    title_bottomMargin: 30;
+}
+
+#login_last_user_view
+{
+    headimageview_marginTop : 64;
+    textBackViewY : 20;
+}
+
+#ExtraDeviceLogin
+{
+    deviceViewY : 105;
+}
+
+#OfflinePayView
+{
+    tip_view_top_margin : 5;
+}
+
+#PayOrderConfirmView
+{
+    bottom_margin_content : 0;
+    bottom_margin_line : 6;
+    bottom_margin_desc : 2;
+    bottom_margin_money : 4;
+    bottom_margin_fav : 8;
+    bottom_margin_cardinfo : 10;
+    bottom_margin_btn : 10;
+}
+
+#AvailableCardListView
+{
+    top_margin_content : 80;
+}
+
+#WCOutView {
+    /* dial pad */
+    dialPadTopMargin : 90;
+    padBtnDiameter : 65;
+    dialPadVerticalPadding : 8;
+    dialPadHorizontalPadding : 18;
+    callBtnMarginKeyPad: 8;
+    skmBtnsMarginHangupBtn: 55;
+    
+    /* dial view */
+    inputArea_marginTop: 8;
+    inputArea_phoneNumber_marginBottom: -10;
+    
+    /*calling view*/
+    headImageMarginTop: 65;
+    userLabelMarginTopWhenNoHeadImage: 20;
+}
+
+#MultiTalkMainViewController
+{
+    contacts_collection_view_height : 280;
+}
+
+#MultiTalkTalkingOperateView
+{
+    title_margin_top : 15;
+    title_margin_left : 15;
+    title_height : 25;
+    title_font_size : 21;
+    title_text_color : "#ffffff";
+    
+    timer_margin_left : 15;
+    timer_height : 15;
+    timer_font_size : 12;
+    timer_text_color : "#ffffff";
+    
+    minimize_button_center_margin_left : 45;
+    minimize_button_center_margin_bottom : 105;
+    
+    hangup_button_center_margin_bottom : 42;
+    hangup_button_height : 65;
+    
+    lefttop_button_width : 45;
+    lefttop_button_height : 60;
+    
+    righttop_button_width : 45;
+    righttop_button_height : 60;
+    
+    middletop_button_width : 45;
+    middletop_button_height : 60;
+
+    mute_button_image_name : "multitalkMuteModeiP4.png";
+    mute_button_hl_image_name : "multitalkMuteModeiP4HL.png";
+    mute_button_selected_image_name : "multitalkMuteModeiP4On.png";
+    
+    speaker_button_image_name : "multitalkSpeakerModeiP4.png";
+    speaker_button_hl_image_name : "multitalkSpeakerModeiP4HL.png";
+    speaker_button_selected_image_name : "multitalkSpeakerModeiP4On.png";
+    
+    video_button_image_name : "multitalkVideoiP4.png";
+    video_button_hl_image_name : "multitalkVideoiP4HL.png";
+    video_button_selected_image_name : "multitalkVideoiP4On.png";
+    
+    lefttop_button_center_margin_center : 95;
+    
+    righttop_button_center_margin_center : 95;
+}
+
+#MultiTalkBeforeTalkingOperateView
+{
+    hd_head_margin_top : 50;
+    member_view_top_offset : 30;
+    
+    hangup_button_margin_center : 50;
+    hangup_button_center_margin_bottom : 42;
+    hangup_button_height : 65;
+    
+    callDeclineBtn_image_name : "callDeclineBtniP4.png";
+    callDeclineBtn_hl_image_name : "callDeclineBtniP4HL.png";
+    callAnswerBtn_image : "callAnswerBtniP4.png";
+    callAnswerBtn_hl_image : "callAnswerBtniP4HL.png";
+}
+
+#MusicPlayerMainViewController
+{
+    shade_Gradient_height : 120;
+    
+    first_page_cover_height : 220;
+    second_page_cover_height : 120;
+    /*cover_image_offset = (first_page_cover_height-second_page_cover_height)/2 */
+    cover_image_offset : 50;
+    
+    table_view_height_to_top : 145;
+    lyrics_table_view_height : 245;
+    max_table_view_height : 245;
+    
+    music_title_above_cover_bottom : 30;
+    
+    single_lyric_height_adjust : 80;
+    music_title_view_height_adjust : 10;
+    music_title_view_height : 48;
+}
+#CardConsumedView
+{
+    icon_start_y : 45.0;
+    top_bg_view_height : 200.0;
+    bottom_bg_view_height : 130.0;
+}
