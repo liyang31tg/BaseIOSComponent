@@ -11,8 +11,13 @@ import UIKit
 class MainFrameVC : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.title = "chat"
+        self.navigationController!.interactivePopGestureRecognizer!.delegate = nil
         print(self.navigationController)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.title = "chat"
     }
     
 }

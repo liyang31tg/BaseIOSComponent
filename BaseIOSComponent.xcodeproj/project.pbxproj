@@ -70,7 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B619FD931C302BB4000A2A2A /* BaseIOSComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOSComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B619FD931C302BB4000A2A2A /* 微信.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B619FD961C302BB4000A2A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B619FD9B1C302BB4000A2A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B619FD9D1C302BB4000A2A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		B619FD941C302BB4000A2A2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B619FD931C302BB4000A2A2A /* BaseIOSComponent.app */,
+				B619FD931C302BB4000A2A2A /* 微信.app */,
 				B619FDA71C302BB4000A2A2A /* BaseIOSComponentTests.xctest */,
 				B619FDB21C302BB4000A2A2A /* BaseIOSComponentUITests.xctest */,
 			);
@@ -355,7 +355,7 @@
 			);
 			name = BaseIOSComponent;
 			productName = BaseIOSComponent;
-			productReference = B619FD931C302BB4000A2A2A /* BaseIOSComponent.app */;
+			productReference = B619FD931C302BB4000A2A2A /* 微信.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B619FDA61C302BB4000A2A2A /* BaseIOSComponentTests */ = {
@@ -406,6 +406,7 @@
 				TargetAttributes = {
 					B619FD921C302BB4000A2A2A = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = Y67F42V7QS;
 					};
 					B619FDA61C302BB4000A2A2A = {
 						CreatedOnToolsVersion = 7.1;
@@ -647,11 +648,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zegang Peng (LA48M23GR9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zegang Peng (LA48M23GR9)";
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信";
+				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 			};
 			name = Debug;
@@ -660,11 +664,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zegang Peng (LA48M23GR9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zegang Peng (LA48M23GR9)";
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信";
+				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 			};
 			name = Release;

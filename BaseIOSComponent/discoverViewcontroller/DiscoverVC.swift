@@ -11,7 +11,10 @@ import UIKit
 class DiscoverVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.tabBarController?.title = "Tool"
         print(self.navigationController)
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.title = "Tool"
     }
 }

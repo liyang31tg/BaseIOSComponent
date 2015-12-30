@@ -9,5 +9,7 @@
 import Foundation
 import UIKit
 class BaseNavigationController: UINavigationController {
-    
+    override func viewDidLoad() {
+        self.interactivePopGestureRecognizer!.delegate = nil;
+    }
 }

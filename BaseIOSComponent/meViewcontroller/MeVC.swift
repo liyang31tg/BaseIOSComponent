@@ -11,7 +11,10 @@ import UIKit
 class MeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.tabBarController?.title = "UI"
         print(self.navigationController)
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.title = "UI"
     }
 }

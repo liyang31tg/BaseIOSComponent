@@ -11,7 +11,9 @@ import UIKit
 class ContactVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.tabBarController?.title = "animation"
-        print(self.navigationController)
     }
 }
