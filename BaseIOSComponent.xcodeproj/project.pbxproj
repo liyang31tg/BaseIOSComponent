@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FD961C302BB4000A2A2A /* AppDelegate.swift */; };
-		B619FD991C302BB4000A2A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619FD981C302BB4000A2A2A /* ViewController.swift */; };
 		B619FD9C1C302BB4000A2A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619FD9A1C302BB4000A2A2A /* Main.storyboard */; };
 		B619FD9E1C302BB4000A2A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B619FD9D1C302BB4000A2A2A /* Assets.xcassets */; };
 		B619FDA11C302BB4000A2A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619FD9F1C302BB4000A2A2A /* LaunchScreen.storyboard */; };
@@ -44,6 +43,13 @@
 		B67DA3731C340C55009BC0B3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67DA3721C340C55009BC0B3 /* libz.tbd */; };
 		B67DA3791C340D39009BC0B3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */; };
 		B67DA37B1C340F4F009BC0B3 /* weChat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67DA37A1C340F4F009BC0B3 /* weChat.xcassets */; };
+		B67DA3811C34180B009BC0B3 /* BaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */; };
+		B67DA3831C341850009BC0B3 /* MainFrameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3821C341850009BC0B3 /* MainFrameVC.swift */; };
+		B67DA3851C34185E009BC0B3 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3841C34185E009BC0B3 /* ContactVC.swift */; };
+		B67DA3871C341877009BC0B3 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3861C341877009BC0B3 /* DiscoverVC.swift */; };
+		B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3881C341884009BC0B3 /* MeVC.swift */; };
+		B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */; };
+		B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +72,6 @@
 /* Begin PBXFileReference section */
 		B619FD931C302BB4000A2A2A /* BaseIOSComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOSComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B619FD961C302BB4000A2A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B619FD981C302BB4000A2A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B619FD9B1C302BB4000A2A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B619FD9D1C302BB4000A2A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B619FDA01C302BB4000A2A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +112,13 @@
 		B67DA3721C340C55009BC0B3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		B67DA37A1C340F4F009BC0B3 /* weChat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = weChat.xcassets; sourceTree = "<group>"; };
+		B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarViewController.swift; sourceTree = "<group>"; };
+		B67DA3821C341850009BC0B3 /* MainFrameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFrameVC.swift; sourceTree = "<group>"; };
+		B67DA3841C34185E009BC0B3 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
+		B67DA3861C341877009BC0B3 /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		B67DA3881C341884009BC0B3 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +172,14 @@
 		B619FD951C302BB4000A2A2A /* BaseIOSComponent */ = {
 			isa = PBXGroup;
 			children = (
+				B67DA37E1C3417C6009BC0B3 /* mainFrameViewController */,
+				B67DA37C1C3417C6009BC0B3 /* contactViewController */,
+				B67DA37D1C3417C6009BC0B3 /* discoverViewcontroller */,
+				B67DA37F1C3417C6009BC0B3 /* meViewcontroller */,
 				B619FDC51C302C5D000A2A2A /* component */,
 				B619FDC61C302C5D000A2A2A /* public */,
 				B619FD961C302BB4000A2A2A /* AppDelegate.swift */,
-				B619FD981C302BB4000A2A2A /* ViewController.swift */,
+				B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */,
 				B619FD9A1C302BB4000A2A2A /* Main.storyboard */,
 				B619FD9D1C302BB4000A2A2A /* Assets.xcassets */,
 				B619FD9F1C302BB4000A2A2A /* LaunchScreen.storyboard */,
@@ -284,8 +300,42 @@
 			isa = PBXGroup;
 			children = (
 				B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */,
+				B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */,
+				B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		B67DA37C1C3417C6009BC0B3 /* contactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B67DA3841C34185E009BC0B3 /* ContactVC.swift */,
+			);
+			path = contactViewController;
+			sourceTree = "<group>";
+		};
+		B67DA37D1C3417C6009BC0B3 /* discoverViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B67DA3861C341877009BC0B3 /* DiscoverVC.swift */,
+			);
+			path = discoverViewcontroller;
+			sourceTree = "<group>";
+		};
+		B67DA37E1C3417C6009BC0B3 /* mainFrameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B67DA3821C341850009BC0B3 /* MainFrameVC.swift */,
+			);
+			path = mainFrameViewController;
+			sourceTree = "<group>";
+		};
+		B67DA37F1C3417C6009BC0B3 /* meViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B67DA3881C341884009BC0B3 /* MeVC.swift */,
+			);
+			path = meViewcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,13 +471,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B619FD991C302BB4000A2A2A /* ViewController.swift in Sources */,
 				B67DA35F1C340B25009BC0B3 /* SocketAckEmitter.swift in Sources */,
 				B67DA3611C340B25009BC0B3 /* SocketAnyEvent.swift in Sources */,
 				B619FDD91C302DB8000A2A2A /* Request.swift in Sources */,
+				B67DA3871C341877009BC0B3 /* DiscoverVC.swift in Sources */,
 				B619FDDA1C302DB8000A2A2A /* StatusCode.swift in Sources */,
 				B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */,
 				B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */,
+				B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */,
+				B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */,
+				B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */,
 				B67DA3631C340B25009BC0B3 /* SocketEngineClient.swift in Sources */,
 				B619FDDE1C302EEA000A2A2A /* CommonUtil.swift in Sources */,
 				B67DA3671C340B25009BC0B3 /* SocketFixUTF8.swift in Sources */,
@@ -437,10 +490,13 @@
 				B67DA3711C340B25009BC0B3 /* WebSocket.swift in Sources */,
 				B619FDDB1C302DB8000A2A2A /* Upload.swift in Sources */,
 				B67DA3651C340B25009BC0B3 /* SocketEngineSpec.swift in Sources */,
+				B67DA3831C341850009BC0B3 /* MainFrameVC.swift in Sources */,
 				B67DA36C1C340B25009BC0B3 /* SocketPacket.swift in Sources */,
 				B67DA3661C340B25009BC0B3 /* SocketEventHandler.swift in Sources */,
 				B67DA3791C340D39009BC0B3 /* BaseNavigationController.swift in Sources */,
+				B67DA3851C34185E009BC0B3 /* ContactVC.swift in Sources */,
 				B67DA3691C340B25009BC0B3 /* SocketIOClientOption.swift in Sources */,
+				B67DA3811C34180B009BC0B3 /* BaseTabbarViewController.swift in Sources */,
 				B619FDE21C3036C0000A2A2A /* NSData+GZIP.swift in Sources */,
 				B67DA36A1C340B25009BC0B3 /* SocketIOClientStatus.swift in Sources */,
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
