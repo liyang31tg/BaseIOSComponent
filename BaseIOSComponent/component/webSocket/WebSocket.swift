@@ -761,7 +761,32 @@ public class WebSocket : NSObject, NSStreamDelegate {
     
 }
 
-
+private class SSLCert {
+    var certData: NSData?
+    var key: SecKeyRef?
+    
+    /**
+     Designated init for certificates
+     
+     - parameter data: is the binary data of the certificate
+     
+     - returns: a representation security object to be used with
+     */
+    init(data: NSData) {
+        self.certData = data
+    }
+    
+    /**
+     Designated init for public keys
+     
+     - parameter key: is the public key to be used
+     
+     - returns: a representation security object to be used with
+     */
+    init(key: SecKeyRef) {
+        self.key = key
+    }
+}
 
 private class SSLSecurity {
     var validatedDN = true //should the domain name be validated?

@@ -9,7 +9,7 @@
 import Foundation
 import Security
 
-public class SSLCert {
+public class SSLCert1 {
     var certData: NSData?
     var key: SecKeyRef?
     
@@ -53,10 +53,10 @@ public class HTTPSecurity {
     */
     public convenience init(usePublicKeys: Bool = false) {
         let paths = NSBundle.mainBundle().pathsForResourcesOfType("cer", inDirectory: ".")
-        var collect = Array<SSLCert>()
+        var collect = Array<SSLCert1>()
         for path in paths {
             if let d = NSData(contentsOfFile: path as String) {
-                collect.append(SSLCert(data: d))
+                collect.append(SSLCert1(data: d))
             }
         }
         self.init(certs:collect, usePublicKeys: usePublicKeys)
@@ -70,7 +70,7 @@ public class HTTPSecurity {
     
     - returns: a representation security object to be used with
     */
-    public init(certs: [SSLCert], usePublicKeys: Bool) {
+    public init(certs: [SSLCert1], usePublicKeys: Bool) {
         self.usePublicKeys = usePublicKeys
         
         if self.usePublicKeys {
