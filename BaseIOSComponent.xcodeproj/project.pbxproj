@@ -50,6 +50,7 @@
 		B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3881C341884009BC0B3 /* MeVC.swift */; };
 		B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */; };
 		B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */; };
+		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		B67DA3881C341884009BC0B3 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				B67DA3821C341850009BC0B3 /* MainFrameVC.swift */,
+				B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */,
 			);
 			path = mainFrameViewController;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				B6299BFC1C391FC700A19A2F /* SocketIOClientOption.swift in Sources */,
 				B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */,
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
+				B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */,
 				B6299BF81C391FC700A19A2F /* SocketEngineSpec.swift in Sources */,
 				B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */,
 			);

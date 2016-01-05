@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--通讯录-->
         <scene sceneID="dFY-j0-z7w">
             <objects>
-                <viewController id="xou-fE-rTp" customClass="ContactVC" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xou-fE-rTp" customClass="ContactVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f8v-hI-NXS"/>
                         <viewControllerLayoutGuide type="bottom" id="yqm-aO-PXZ"/>
@@ -16,7 +16,6 @@
                     <view key="view" contentMode="scaleToFill" id="7Tc-30-o5I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="通讯录" image="tabbar_contacts" selectedImage="tabbar_contactsHL" id="BFF-WZ-jYr"/>
@@ -29,7 +28,7 @@
         <!--我-->
         <scene sceneID="mz7-JW-iNo">
             <objects>
-                <viewController id="sXL-y0-I9J" customClass="MeVC" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sXL-y0-I9J" customClass="MeVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aWE-zl-bj0"/>
                         <viewControllerLayoutGuide type="bottom" id="frS-fl-nbP"/>
@@ -37,7 +36,6 @@
                     <view key="view" contentMode="scaleToFill" id="sJo-pg-LId">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="我" image="tabbar_me" selectedImage="tabbar_meHL" id="mKu-IO-kEr"/>
@@ -50,7 +48,7 @@
         <!--发现-->
         <scene sceneID="wYc-vt-Qvw">
             <objects>
-                <viewController id="AfV-L1-Wbr" customClass="DiscoverVC" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AfV-L1-Wbr" customClass="DiscoverVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4hg-l1-M3y"/>
                         <viewControllerLayoutGuide type="bottom" id="Dmr-0I-YDY"/>
@@ -58,7 +56,6 @@
                     <view key="view" contentMode="scaleToFill" id="sbS-1n-gl8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discoverHL" id="bDu-GG-GnP"/>
@@ -71,7 +68,7 @@
         <!--微信-->
         <scene sceneID="Gth-b9-ByL">
             <objects>
-                <viewController id="0nJ-v5-PSo" customClass="MainFrameVC" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0nJ-v5-PSo" customClass="MainFrameVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6bS-CE-BgW"/>
                         <viewControllerLayoutGuide type="bottom" id="kb0-EJ-rFx"/>
@@ -82,57 +79,62 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8n-wA-acs">
                                 <rect key="frame" x="117" y="209" width="46" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="byn-ZN-oAd" kind="show" id="sc0-Cj-ScZ"/>
+                                    <action selector="rightBtnAction:" destination="0nJ-v5-PSo" eventType="touchUpInside" id="0ZA-el-3jC"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="微信" image="tabbar_mainframe" selectedImage="tabbar_mainframeHL" id="mQf-Px-LRD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="Ka9-cd-K2l" kind="show" identifier="people2chatView" id="eFI-rK-BgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuV-J3-7tJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="-373"/>
         </scene>
-        <!--chat me-->
-        <scene sceneID="Tz1-OU-yJg">
+        <!--Chat Table View-->
+        <scene sceneID="gqj-5a-hxY">
             <objects>
-                <viewController id="byn-ZN-oAd" customClass="BaseViewController" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Htd-UY-AiH"/>
-                        <viewControllerLayoutGuide type="bottom" id="w4R-Ou-cM8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d3n-In-6yl">
+                <tableViewController id="Ka9-cd-K2l" customClass="ChatTableView" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q5U-Vl-4bT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="chat me" id="zBZ-Cq-Bv1">
-                        <barButtonItem key="rightBarButtonItem" image="back" id="Rsr-Mm-BWb"/>
-                    </navigationItem>
-                    <nil key="simulatedBottomBarMetrics"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Iio-ht-nWu">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iio-ht-nWu" id="Wrb-ww-sQX">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ka9-cd-K2l" id="dNY-6i-ViK"/>
+                            <outlet property="delegate" destination="Ka9-cd-K2l" id="49x-e5-vq9"/>
+                        </connections>
+                    </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uF3-dz-cAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPX-4v-iJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-373"/>
+            <point key="canvasLocation" x="798" y="-362"/>
         </scene>
         <!--TabbarVC-->
         <scene sceneID="EKA-CU-KnD">
             <objects>
-                <tabBarController id="b3R-Ed-0RO" customClass="TabbarVC" customModule="BaseIOSComponent" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="b3R-Ed-0RO" customClass="TabbarVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="K9T-57-P8T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Jz7-AC-eGT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -154,7 +156,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9tt-nl-wII">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="b3R-Ed-0RO" kind="relationship" relationship="rootViewController" id="whl-61-rTp"/>
@@ -166,7 +167,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="20" height="20"/>
         <image name="tabbar_contacts" width="27" height="23"/>
         <image name="tabbar_contactsHL" width="27" height="23"/>
         <image name="tabbar_discover" width="23" height="23"/>

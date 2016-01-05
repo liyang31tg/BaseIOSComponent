@@ -12,6 +12,7 @@ class MainFrameVC : UIViewController{
     var socket:SocketIOClient!
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.navigationController!.interactivePopGestureRecognizer!.delegate = nil
         print(self.navigationController)
         socket = SocketIOClient(socketURL: "localhost:3000", options: [.Log(true), .ForcePolling(true)])
@@ -24,6 +25,11 @@ class MainFrameVC : UIViewController{
 
 
         socket.connect()
+    }
+    
+
+    @IBAction func rightBtnAction(sender: AnyObject) {
+        self.performSegueWithIdentifier("people2chatView", sender: self);
     }
     
     override func viewWillAppear(animated: Bool) {
