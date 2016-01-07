@@ -50,6 +50,7 @@
 		B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3881C341884009BC0B3 /* MeVC.swift */; };
 		B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */; };
 		B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */; };
+		B6F1FA791C3EAEFD0007F2AF /* CoreTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */; };
 		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		B67DA3881C341884009BC0B3 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTextView.swift; sourceTree = "<group>"; };
 		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				B67DA3861C341877009BC0B3 /* DiscoverVC.swift */,
+				B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */,
 			);
 			path = discoverViewcontroller;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				B6299C011C391FC700A19A2F /* SocketStringReader.swift in Sources */,
 				B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */,
 				B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */,
+				B6F1FA791C3EAEFD0007F2AF /* CoreTextView.swift in Sources */,
 				B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */,
 				B6299BFD1C391FC700A19A2F /* SocketIOClientStatus.swift in Sources */,
 				B6299BFF1C391FC700A19A2F /* SocketPacket.swift in Sources */,
@@ -661,6 +665,7 @@
 				PRODUCT_NAME = "微信";
 				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -677,6 +682,7 @@
 				PRODUCT_NAME = "微信";
 				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

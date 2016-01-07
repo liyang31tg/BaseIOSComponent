@@ -24,7 +24,7 @@ class MainFrameVC : UIViewController{
         }
 
 
-        socket.connect()
+//        socket.connect()
     }
     
 

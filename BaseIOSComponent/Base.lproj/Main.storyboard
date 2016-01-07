@@ -56,14 +56,76 @@
                     <view key="view" contentMode="scaleToFill" id="sbS-1n-gl8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-2q-Lo3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCellIdentifier" id="9GC-GY-8Pj" customClass="DiscoverTableViewCell" customModule="微信" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9GC-GY-8Pj" id="ZXh-g7-s2A">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="AfV-L1-Wbr" id="1ce-KS-6Ye"/>
+                                    <outlet property="delegate" destination="AfV-L1-Wbr" id="ytb-PX-een"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hFf-2q-Lo3" firstAttribute="leading" secondItem="sbS-1n-gl8" secondAttribute="leading" id="5uu-tu-SWE"/>
+                            <constraint firstItem="Dmr-0I-YDY" firstAttribute="top" secondItem="hFf-2q-Lo3" secondAttribute="bottom" id="82O-aq-TIK"/>
+                            <constraint firstItem="hFf-2q-Lo3" firstAttribute="top" secondItem="sbS-1n-gl8" secondAttribute="top" id="Ghm-77-Iez"/>
+                            <constraint firstAttribute="trailing" secondItem="hFf-2q-Lo3" secondAttribute="trailing" id="lyv-k6-9PP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discoverHL" id="bDu-GG-GnP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="GF2-97-a8S" kind="show" identifier="discover2CoreText" id="Hjd-Bc-LOn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="736"/>
+        </scene>
+        <!--CoreText-->
+        <scene sceneID="2OW-sr-ilj">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GF2-97-a8S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D0K-OU-VGk"/>
+                        <viewControllerLayoutGuide type="bottom" id="5aE-HF-qVh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x9X-br-ITA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w06-df-CHz" customClass="CoreTextView" customModule="微信" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5aE-HF-qVh" firstAttribute="top" secondItem="w06-df-CHz" secondAttribute="bottom" id="0xs-Pa-Sfw"/>
+                            <constraint firstAttribute="trailing" secondItem="w06-df-CHz" secondAttribute="trailing" id="AIp-nI-jDe"/>
+                            <constraint firstItem="w06-df-CHz" firstAttribute="leading" secondItem="x9X-br-ITA" secondAttribute="leading" id="NTv-39-tN4"/>
+                            <constraint firstItem="w06-df-CHz" firstAttribute="top" secondItem="x9X-br-ITA" secondAttribute="top" id="uHX-EC-ylJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CoreText" id="8w1-DP-ay4"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="736"/>
         </scene>
         <!--微信-->
         <scene sceneID="Gth-b9-ByL">
@@ -106,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Iio-ht-nWu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableiview" id="Iio-ht-nWu">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iio-ht-nWu" id="Wrb-ww-sQX">
@@ -151,7 +213,7 @@
         <!--Navigation Controller-->
         <scene sceneID="nsw-a1-bC6">
             <objects>
-                <navigationController id="LQt-wk-XWs" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LQt-wk-XWs" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9tt-nl-wII">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
