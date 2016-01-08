@@ -50,7 +50,8 @@
 		B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3881C341884009BC0B3 /* MeVC.swift */; };
 		B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */; };
 		B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */; };
-		B6F1FA791C3EAEFD0007F2AF /* CoreTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */; };
+		B6C8340A1C3FFBA30007BF1F /* BaseGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */; };
+		B6F1FA791C3EAEFD0007F2AF /* TextKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */; };
 		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +122,8 @@
 		B67DA3881C341884009BC0B3 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
-		B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTextView.swift; sourceTree = "<group>"; };
+		B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGroupTableViewController.swift; sourceTree = "<group>"; };
+		B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC.swift; sourceTree = "<group>"; };
 		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,6 +308,7 @@
 				B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */,
 				B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */,
 				B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */,
+				B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -322,7 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				B67DA3861C341877009BC0B3 /* DiscoverVC.swift */,
-				B6F1FA781C3EAEFD0007F2AF /* CoreTextView.swift */,
+				B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */,
 			);
 			path = discoverViewcontroller;
 			sourceTree = "<group>";
@@ -487,7 +490,7 @@
 				B6299C011C391FC700A19A2F /* SocketStringReader.swift in Sources */,
 				B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */,
 				B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */,
-				B6F1FA791C3EAEFD0007F2AF /* CoreTextView.swift in Sources */,
+				B6F1FA791C3EAEFD0007F2AF /* TextKitVC.swift in Sources */,
 				B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */,
 				B6299BFD1C391FC700A19A2F /* SocketIOClientStatus.swift in Sources */,
 				B6299BFF1C391FC700A19A2F /* SocketPacket.swift in Sources */,
@@ -508,6 +511,7 @@
 				B6299BF51C391FC700A19A2F /* SocketEngine.swift in Sources */,
 				B67DA3811C34180B009BC0B3 /* BaseTabbarViewController.swift in Sources */,
 				B619FDE21C3036C0000A2A2A /* NSData+GZIP.swift in Sources */,
+				B6C8340A1C3FFBA30007BF1F /* BaseGroupTableViewController.swift in Sources */,
 				B6299BFB1C391FC700A19A2F /* SocketIOClient.swift in Sources */,
 				B6299BFC1C391FC700A19A2F /* SocketIOClientOption.swift in Sources */,
 				B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */,

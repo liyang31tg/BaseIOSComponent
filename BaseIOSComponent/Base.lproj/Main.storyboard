@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="331" y="736"/>
         </scene>
-        <!--CoreText-->
+        <!--TextKit-->
         <scene sceneID="2OW-sr-ilj">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GF2-97-a8S" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GF2-97-a8S" customClass="TextKitVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0K-OU-VGk"/>
                         <viewControllerLayoutGuide type="bottom" id="5aE-HF-qVh"/>
@@ -106,9 +106,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w06-df-CHz" customClass="CoreTextView" customModule="微信" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w06-df-CHz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-GY-xu7">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZB3-GY-xu7" secondAttribute="trailing" id="5k7-Hs-NdO"/>
+                                    <constraint firstItem="ZB3-GY-xu7" firstAttribute="top" secondItem="w06-df-CHz" secondAttribute="top" constant="64" id="gHU-Om-Cxc"/>
+                                    <constraint firstItem="ZB3-GY-xu7" firstAttribute="leading" secondItem="w06-df-CHz" secondAttribute="leading" id="oc7-we-yGy"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZB3-GY-xu7" secondAttribute="bottom" id="q4P-by-gwY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,9 +134,12 @@
                             <constraint firstItem="w06-df-CHz" firstAttribute="top" secondItem="x9X-br-ITA" secondAttribute="top" id="uHX-EC-ylJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="CoreText" id="8w1-DP-ay4"/>
+                    <navigationItem key="navigationItem" title="TextKit" id="8w1-DP-ay4"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="ZB3-GY-xu7" id="C6o-Kq-aBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
