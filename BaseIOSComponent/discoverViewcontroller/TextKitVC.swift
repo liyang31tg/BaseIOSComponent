@@ -15,10 +15,13 @@ class TextKitVC: BaseViewController,UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.contentTextView.attributedText = NSAttributedString(string: content)
-        self.contentTextView.font = UIFont.systemFontOfSize(18);
+        let attributeStr = NSMutableAttributedString(string: content)
+        attributeStr.addAttribute(NSTextEffectAttributeName, value: NSTextEffectLetterpressStyle, range: NSMakeRange(0, 25))
+        self.contentTextView.attributedText = attributeStr
+        self.contentTextView.font = UIFont.systemFontOfSize(14);
         self.contentTextView.dataDetectorTypes = UIDataDetectorTypes.All
         self.contentTextView.delegate = self
+        self.contentTextView.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     }
     
     func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {

@@ -53,6 +53,8 @@
 		B6C8340A1C3FFBA30007BF1F /* BaseGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */; };
 		B6F1FA791C3EAEFD0007F2AF /* TextKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */; };
 		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
+		B6F5D7081C40A7DC0089C67C /* BasePlainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */; };
+		B6F5D70A1C40A88C0089C67C /* TextKitDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGroupTableViewController.swift; sourceTree = "<group>"; };
 		B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC.swift; sourceTree = "<group>"; };
 		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
+		B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlainTableViewController.swift; sourceTree = "<group>"; };
+		B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitDetailTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +313,7 @@
 				B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */,
 				B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */,
 				B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */,
+				B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			children = (
 				B67DA3861C341877009BC0B3 /* DiscoverVC.swift */,
 				B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */,
+				B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */,
 			);
 			path = discoverViewcontroller;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				B6299BFE1C391FC700A19A2F /* SocketLogger.swift in Sources */,
 				B67DA3831C341850009BC0B3 /* MainFrameVC.swift in Sources */,
 				B6299BF31C391FC700A19A2F /* SocketAckManager.swift in Sources */,
+				B6F5D70A1C40A88C0089C67C /* TextKitDetailTableView.swift in Sources */,
 				B67DA3791C340D39009BC0B3 /* BaseNavigationController.swift in Sources */,
 				B67DA3851C34185E009BC0B3 /* ContactVC.swift in Sources */,
 				B6299BF51C391FC700A19A2F /* SocketEngine.swift in Sources */,
@@ -519,6 +526,7 @@
 				B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */,
 				B6299BF81C391FC700A19A2F /* SocketEngineSpec.swift in Sources */,
 				B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */,
+				B6F5D7081C40A7DC0089C67C /* BasePlainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ class DiscoverVC: BaseGroupTableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         dataArray = [[DiscoverTableViewCellDomain(sectionTitle: "图文混排", title: "",performIdentifier: ""),
-            DiscoverTableViewCellDomain(sectionTitle: "nil", title: "TextKit",performIdentifier: "discover2CoreText")]]
+            DiscoverTableViewCellDomain(sectionTitle: "nil", title: "TextKit",performIdentifier: "Discover2TextKitDetail")]]
 
     }
     override func viewWillAppear(animated: Bool) {

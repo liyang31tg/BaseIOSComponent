@@ -43,7 +43,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOn-st-UUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="1268"/>
+            <point key="canvasLocation" x="304" y="1431"/>
+        </scene>
+        <!--TextKitDetail-->
+        <scene sceneID="7N8-dc-KUH">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7py-xk-z5m" customClass="TextKitDetailTableView" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kF-Z1-fQ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="gpl-4t-zPG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ByD-4O-h5f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8YG-yQ-Q9W">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCellIdentifier" id="orR-jR-3YA" customClass="DiscoverTableViewCell" customModule="微信" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="orR-jR-3YA" id="v1X-rf-S3u">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7py-xk-z5m" id="srT-Lh-sRZ"/>
+                                    <outlet property="delegate" destination="7py-xk-z5m" id="oCr-0Q-Wdv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8YG-yQ-Q9W" secondAttribute="trailing" id="S6b-RA-E70"/>
+                            <constraint firstItem="8YG-yQ-Q9W" firstAttribute="leading" secondItem="ByD-4O-h5f" secondAttribute="leading" id="YfH-Gb-0V5"/>
+                            <constraint firstItem="8YG-yQ-Q9W" firstAttribute="top" secondItem="2kF-Z1-fQ7" secondAttribute="bottom" id="awN-aA-cwp"/>
+                            <constraint firstItem="gpl-4t-zPG" firstAttribute="top" secondItem="8YG-yQ-Q9W" secondAttribute="bottom" id="cV8-VK-Lci"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TextKitDetail" id="10D-Ph-H7n"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="GF2-97-a8S" kind="show" identifier="TextKitDetail2MailOrPhone" id="qra-xx-9Qq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ex-8P-2Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="1226"/>
         </scene>
         <!--发现-->
         <scene sceneID="wYc-vt-Qvw">
@@ -87,14 +139,14 @@
                     <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discoverHL" id="bDu-GG-GnP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <segue destination="GF2-97-a8S" kind="show" identifier="discover2CoreText" id="Hjd-Bc-LOn"/>
+                        <segue destination="7py-xk-z5m" kind="show" identifier="Discover2TextKitDetail" id="nxs-uK-Cpg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="736"/>
         </scene>
-        <!--TextKit-->
+        <!--链接和电话号码-->
         <scene sceneID="2OW-sr-ilj">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="GF2-97-a8S" customClass="TextKitVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +164,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-GY-xu7">
                                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                     </textView>
@@ -134,7 +186,7 @@
                             <constraint firstItem="w06-df-CHz" firstAttribute="top" secondItem="x9X-br-ITA" secondAttribute="top" id="uHX-EC-ylJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TextKit" id="8w1-DP-ay4"/>
+                    <navigationItem key="navigationItem" title="链接和电话号码" id="ltt-dN-K9V"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -143,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="736"/>
+            <point key="canvasLocation" x="1136" y="1226"/>
         </scene>
         <!--微信-->
         <scene sceneID="Gth-b9-ByL">
