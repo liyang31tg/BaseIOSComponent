@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 class SetupPagesVC: BaseViewController {
+    
+    
+    @IBOutlet weak var contentView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
