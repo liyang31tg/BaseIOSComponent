@@ -43,7 +43,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOn-st-UUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="1431"/>
+            <point key="canvasLocation" x="62" y="1501"/>
+        </scene>
+        <!--ScrollViewDetail-->
+        <scene sceneID="Y0u-Jl-2pR">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bz1-Dc-gLb" customClass="ScrollViewDetailVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kaN-mh-rUq"/>
+                        <viewControllerLayoutGuide type="bottom" id="h7c-IY-v9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JVc-7J-YI9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EJD-xP-3lr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCellIdentifier" id="qnJ-5n-5h5" customClass="DiscoverTableViewCell" customModule="微信" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qnJ-5n-5h5" id="ZtC-tC-ZCu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Bz1-Dc-gLb" id="Q2P-GO-ed7"/>
+                                    <outlet property="delegate" destination="Bz1-Dc-gLb" id="K8Y-We-Imo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJD-xP-3lr" firstAttribute="leading" secondItem="JVc-7J-YI9" secondAttribute="leading" id="53U-T1-mU1"/>
+                            <constraint firstAttribute="trailing" secondItem="EJD-xP-3lr" secondAttribute="trailing" id="N5k-QD-Kt6"/>
+                            <constraint firstItem="h7c-IY-v9m" firstAttribute="top" secondItem="EJD-xP-3lr" secondAttribute="bottom" id="WGw-vd-g2w"/>
+                            <constraint firstItem="EJD-xP-3lr" firstAttribute="top" secondItem="kaN-mh-rUq" secondAttribute="bottom" id="tst-Jm-XFE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ScrollViewDetail" id="JHf-Zs-YTG"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="roy-cx-rLf" kind="show" identifier="scrollView2pullToRefresh" id="nr8-QP-Tl5"/>
+                        <segue destination="eMu-J0-AmC" kind="show" identifier="scrollView2pages" id="qMQ-4J-dpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dt8-f1-ARR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="642"/>
         </scene>
         <!--TextKitDetail-->
         <scene sceneID="7N8-dc-KUH">
@@ -95,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ex-8P-2Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="1226"/>
+            <point key="canvasLocation" x="384" y="1501"/>
         </scene>
         <!--发现-->
         <scene sceneID="wYc-vt-Qvw">
@@ -140,11 +191,34 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="7py-xk-z5m" kind="show" identifier="Discover2TextKitDetail" id="nxs-uK-Cpg"/>
+                        <segue destination="Bz1-Dc-gLb" kind="show" identifier="Discover2UIScrollViewDetail" id="9YE-a2-6u8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="736"/>
+        </scene>
+        <!--Setup PagesVC-->
+        <scene sceneID="DRm-1E-96q">
+            <objects>
+                <viewController id="eMu-J0-AmC" customClass="SetupPagesVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZh-1A-vJK"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Z8-sv-IkH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O1R-Bp-JWy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="It3-ve-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="918"/>
         </scene>
         <!--链接和电话号码-->
         <scene sceneID="2OW-sr-ilj">
@@ -196,6 +270,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136" y="1226"/>
+        </scene>
+        <!--pullToRefresh-->
+        <scene sceneID="H5W-MF-W2t">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="roy-cx-rLf" customClass="ScrollViewController" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPT-fs-t8N"/>
+                        <viewControllerLayoutGuide type="bottom" id="inK-QH-Ldj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vak-Oa-GU6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIk-Q8-UqT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GyW-d3-gFO" userLabel="topView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Q9S-3C-gC8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcI-Bc-fTF">
+                                        <rect key="frame" x="0.0" y="-44" width="320" height="44"/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.41960784309999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2Cn-2D-vzY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GyW-d3-gFO" firstAttribute="leading" secondItem="hIk-Q8-UqT" secondAttribute="leading" id="0DR-Jz-mw7"/>
+                                    <constraint firstAttribute="trailing" secondItem="GyW-d3-gFO" secondAttribute="trailing" id="AN0-pc-VxT"/>
+                                    <constraint firstItem="gcI-Bc-fTF" firstAttribute="top" secondItem="hIk-Q8-UqT" secondAttribute="top" constant="-44" id="CCh-cG-BQs"/>
+                                    <constraint firstAttribute="trailing" secondItem="gcI-Bc-fTF" secondAttribute="trailing" id="IpA-Ba-20W"/>
+                                    <constraint firstItem="GyW-d3-gFO" firstAttribute="top" secondItem="hIk-Q8-UqT" secondAttribute="top" id="KXl-p7-08e"/>
+                                    <constraint firstAttribute="bottom" secondItem="GyW-d3-gFO" secondAttribute="bottom" constant="2000" id="TRe-55-Cai"/>
+                                    <constraint firstItem="gcI-Bc-fTF" firstAttribute="leading" secondItem="hIk-Q8-UqT" secondAttribute="leading" id="acB-uj-qqH"/>
+                                    <constraint firstItem="GyW-d3-gFO" firstAttribute="centerX" secondItem="hIk-Q8-UqT" secondAttribute="centerX" id="xt1-yt-Dw8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="roy-cx-rLf" id="vLi-dI-Tgb"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hIk-Q8-UqT" firstAttribute="leading" secondItem="vak-Oa-GU6" secondAttribute="leading" id="P4d-DB-taa"/>
+                            <constraint firstItem="hIk-Q8-UqT" firstAttribute="centerX" secondItem="vak-Oa-GU6" secondAttribute="centerX" id="W9e-Vb-GUc"/>
+                            <constraint firstAttribute="trailing" secondItem="hIk-Q8-UqT" secondAttribute="trailing" id="ZdS-br-eVz"/>
+                            <constraint firstItem="hIk-Q8-UqT" firstAttribute="top" secondItem="aPT-fs-t8N" secondAttribute="bottom" id="pHr-pO-DNw"/>
+                            <constraint firstItem="inK-QH-Ldj" firstAttribute="top" secondItem="hIk-Q8-UqT" secondAttribute="bottom" id="pM5-Ls-WDe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="pullToRefresh" id="SkL-V8-fUC"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="hIk-Q8-UqT" id="cDD-bz-bAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPc-1o-grl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="333"/>
         </scene>
         <!--微信-->
         <scene sceneID="Gth-b9-ByL">

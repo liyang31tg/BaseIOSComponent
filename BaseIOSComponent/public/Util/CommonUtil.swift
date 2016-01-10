@@ -52,5 +52,10 @@ public class CommonUtil {
         return try! inputData.gunzippedData()
     }
 }
+//MARK屏幕尺寸
+let sb = UIScreen.mainScreen().bounds
+let ss = sb.size
+let sw = ss.width
+let sh = ss.height
 
 

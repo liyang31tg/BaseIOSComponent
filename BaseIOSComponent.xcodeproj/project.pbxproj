@@ -55,6 +55,9 @@
 		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
 		B6F5D7081C40A7DC0089C67C /* BasePlainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */; };
 		B6F5D70A1C40A88C0089C67C /* TextKitDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */; };
+		B6F5D70E1C4157700089C67C /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D70D1C4157700089C67C /* ScrollViewController.swift */; };
+		B6F5D7101C42B2990089C67C /* ScrollViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D70F1C42B2990089C67C /* ScrollViewDetailVC.swift */; };
+		B6F5D7121C42B8850089C67C /* SetupPagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7111C42B8850089C67C /* SetupPagesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,9 @@
 		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 		B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlainTableViewController.swift; sourceTree = "<group>"; };
 		B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitDetailTableView.swift; sourceTree = "<group>"; };
+		B6F5D70D1C4157700089C67C /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		B6F5D70F1C42B2990089C67C /* ScrollViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewDetailVC.swift; sourceTree = "<group>"; };
+		B6F5D7111C42B8850089C67C /* SetupPagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupPagesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +335,7 @@
 		B67DA37D1C3417C6009BC0B3 /* discoverViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				B6F5D70B1C41575C0089C67C /* controls */,
 				B67DA3861C341877009BC0B3 /* DiscoverVC.swift */,
 				B6F1FA781C3EAEFD0007F2AF /* TextKitVC.swift */,
 				B6F5D7091C40A88C0089C67C /* TextKitDetailTableView.swift */,
@@ -351,6 +358,24 @@
 				B67DA3881C341884009BC0B3 /* MeVC.swift */,
 			);
 			path = meViewcontroller;
+			sourceTree = "<group>";
+		};
+		B6F5D70B1C41575C0089C67C /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D70C1C41575C0089C67C /* scrollView */,
+			);
+			path = controls;
+			sourceTree = "<group>";
+		};
+		B6F5D70C1C41575C0089C67C /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D70D1C4157700089C67C /* ScrollViewController.swift */,
+				B6F5D70F1C42B2990089C67C /* ScrollViewDetailVC.swift */,
+				B6F5D7111C42B8850089C67C /* SetupPagesVC.swift */,
+			);
+			path = scrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +527,7 @@
 				B6299BFF1C391FC700A19A2F /* SocketPacket.swift in Sources */,
 				B6299BF61C391FC700A19A2F /* SocketEngineClient.swift in Sources */,
 				B6299C021C391FC700A19A2F /* SocketTypes.swift in Sources */,
+				B6F5D7101C42B2990089C67C /* ScrollViewDetailVC.swift in Sources */,
 				B6299BF41C391FC700A19A2F /* SocketAnyEvent.swift in Sources */,
 				B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */,
 				B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */,
@@ -521,11 +547,13 @@
 				B6C8340A1C3FFBA30007BF1F /* BaseGroupTableViewController.swift in Sources */,
 				B6299BFB1C391FC700A19A2F /* SocketIOClient.swift in Sources */,
 				B6299BFC1C391FC700A19A2F /* SocketIOClientOption.swift in Sources */,
+				B6F5D7121C42B8850089C67C /* SetupPagesVC.swift in Sources */,
 				B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */,
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
 				B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */,
 				B6299BF81C391FC700A19A2F /* SocketEngineSpec.swift in Sources */,
 				B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */,
+				B6F5D70E1C4157700089C67C /* ScrollViewController.swift in Sources */,
 				B6F5D7081C40A7DC0089C67C /* BasePlainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
