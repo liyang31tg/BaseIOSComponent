@@ -201,7 +201,7 @@
         <!--Setup PagesVC-->
         <scene sceneID="DRm-1E-96q">
             <objects>
-                <viewController id="eMu-J0-AmC" customClass="SetupPagesVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eMu-J0-AmC" customClass="SetupPagesVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZh-1A-vJK"/>
                         <viewControllerLayoutGuide type="bottom" id="1Z8-sv-IkH"/>
@@ -215,7 +215,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-8H-Gum">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.41960784309999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -230,23 +230,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Z8-sv-IkH" firstAttribute="top" secondItem="n3D-xH-hdD" secondAttribute="bottom" id="GdM-ea-Isn"/>
-                            <constraint firstItem="n3D-xH-hdD" firstAttribute="top" secondItem="aZh-1A-vJK" secondAttribute="bottom" id="HwI-N7-jXN"/>
                             <constraint firstItem="n3D-xH-hdD" firstAttribute="leading" secondItem="O1R-Bp-JWy" secondAttribute="leading" id="oNs-ka-9M9"/>
+                            <constraint firstAttribute="bottom" secondItem="n3D-xH-hdD" secondAttribute="bottom" id="rXL-0J-i8p"/>
                             <constraint firstAttribute="trailing" secondItem="n3D-xH-hdD" secondAttribute="trailing" id="uST-6y-RLd"/>
+                            <constraint firstItem="n3D-xH-hdD" firstAttribute="top" secondItem="O1R-Bp-JWy" secondAttribute="top" id="yCY-Ru-Uea"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
                     <connections>
                         <outlet property="contentView" destination="HNK-8H-Gum" id="JlR-fC-1pE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It3-ve-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="918"/>
+            <point key="canvasLocation" x="1081" y="916"/>
         </scene>
         <!--链接和电话号码-->
         <scene sceneID="2OW-sr-ilj">
@@ -297,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="1226"/>
+            <point key="canvasLocation" x="1111" y="1512"/>
         </scene>
         <!--pullToRefresh-->
         <scene sceneID="H5W-MF-W2t">

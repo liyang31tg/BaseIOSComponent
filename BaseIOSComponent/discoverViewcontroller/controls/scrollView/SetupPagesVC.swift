@@ -18,6 +18,9 @@ class SetupPagesVC: BaseViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
         self.navigationController?.navigationBar.alpha = 0.0
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.None)
     }
+    
 }

@@ -31,7 +31,7 @@ class ScrollViewController: BaseViewController,UIScrollViewDelegate {
 //    }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        scrollView.contentInset.top = 44
+//        scrollView.contentInset.top = 44
     }
     
 

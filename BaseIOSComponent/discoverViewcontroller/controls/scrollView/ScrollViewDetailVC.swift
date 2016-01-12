@@ -13,11 +13,13 @@ class ScrollViewDetailVC: BasePlainTableViewController {
         super.viewDidLoad()
         
         dataArray = [DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - pullToRefresh",performIdentifier: "scrollView2pullToRefresh"),
-        DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - 启动页",performIdentifier: "scrollView2pages")]
+        DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - 引导页",performIdentifier: "scrollView2pages")]
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
         self.navigationController?.navigationBar.alpha = 1.0
+         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
     }
     
 }
