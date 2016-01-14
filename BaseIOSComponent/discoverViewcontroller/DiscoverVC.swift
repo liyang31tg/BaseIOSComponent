@@ -14,7 +14,9 @@ class DiscoverVC: BaseGroupTableViewController{
         dataArray = [[DiscoverTableViewCellDomain(sectionTitle: "图文混排", title: "",performIdentifier: ""),
                       DiscoverTableViewCellDomain(sectionTitle: "nil", title: "TextKit",performIdentifier: "Discover2TextKitDetail")],
                      [DiscoverTableViewCellDomain(sectionTitle: "控件积累", title: "",performIdentifier: ""),
-                    DiscoverTableViewCellDomain(sectionTitle: "nil", title: "UIScrollView",performIdentifier: "Discover2UIScrollViewDetail")]]
+                    DiscoverTableViewCellDomain(sectionTitle: "nil", title: "UIScrollView",performIdentifier: "Discover2UIScrollViewDetail")],
+                    [DiscoverTableViewCellDomain(sectionTitle: "自动布局", title: "",performIdentifier: ""),
+                        DiscoverTableViewCellDomain(sectionTitle: "nil", title: "约束",performIdentifier: "Discover2ConstraintDetail")]]
 
     }
     override func viewWillAppear(animated: Bool) {
