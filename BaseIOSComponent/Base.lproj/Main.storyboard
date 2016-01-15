@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -232,7 +232,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-Bk-u7Q" customClass="preTestLabel" customModule="微信" customModuleProvider="target">
-                                <rect key="frame" x="10" y="64" width="38" height="21"/>
+                                <rect key="frame" x="100" y="64" width="38" height="21"/>
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.41960784309999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="7Tt-Sx-SHw"/>
@@ -273,17 +273,29 @@
                                     <constraint firstItem="WhK-LQ-d7a" firstAttribute="top" secondItem="790-bh-mam" secondAttribute="top" id="uXZ-X2-hHI"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-LR-fyW">
+                                <rect key="frame" x="0.0" y="137" width="46" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="O9I-UU-kbd"/>
+                                    <constraint firstAttribute="height" constant="70" id="U6E-Lx-uwT"/>
+                                </constraints>
+                                <state key="normal" title="gjgkjgjkgkggjhxs"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Agr-Bk-u7Q" secondAttribute="trailing" constant="10" id="30T-3e-qzz"/>
+                            <constraint firstItem="UOD-LR-fyW" firstAttribute="top" secondItem="2Ml-RB-m0E" secondAttribute="bottom" constant="73" id="4AO-1w-PpH"/>
                             <constraint firstAttribute="trailing" secondItem="790-bh-mam" secondAttribute="trailing" constant="10" id="Ktg-Fi-2k1"/>
                             <constraint firstItem="SuT-0Z-d48" firstAttribute="leading" secondItem="WYQ-eb-jTa" secondAttribute="leading" constant="40" id="NjN-wk-rm9"/>
                             <constraint firstItem="SuT-0Z-d48" firstAttribute="top" secondItem="Agr-Bk-u7Q" secondAttribute="bottom" constant="8" id="Xzi-gi-vbA"/>
                             <constraint firstItem="790-bh-mam" firstAttribute="leading" secondItem="WYQ-eb-jTa" secondAttribute="leading" constant="10" id="Y1U-yP-a7H"/>
                             <constraint firstItem="Agr-Bk-u7Q" firstAttribute="top" secondItem="WYQ-eb-jTa" secondAttribute="top" constant="64" id="ZLj-yt-LyC"/>
                             <constraint firstItem="790-bh-mam" firstAttribute="top" secondItem="SuT-0Z-d48" secondAttribute="bottom" id="ft4-Cg-W4c"/>
+                            <constraint firstItem="UOD-LR-fyW" firstAttribute="leading" secondItem="WYQ-eb-jTa" secondAttribute="leading" id="gdw-IN-RUo"/>
                             <constraint firstAttribute="trailing" secondItem="SuT-0Z-d48" secondAttribute="trailing" constant="40" id="piB-Hg-o7X"/>
-                            <constraint firstItem="Agr-Bk-u7Q" firstAttribute="leading" secondItem="WYQ-eb-jTa" secondAttribute="leading" constant="10" id="tfQ-xg-MDR"/>
+                            <constraint firstItem="Agr-Bk-u7Q" firstAttribute="leading" secondItem="WYQ-eb-jTa" secondAttribute="leading" constant="100" id="tfQ-xg-MDR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="几个重要的API" id="Lca-Rc-935"/>
