@@ -42,6 +42,11 @@ class BannerView: UIView,UIScrollViewDelegate {
     var  bannerViewCell:AnyClass?{
         didSet{
             self.updateContentView()
+            if let d = self.delegate {
+                for v in self.cellViews {
+                    d.cellForBannerView(v)
+                }
+            }
         }
     }
     let imageCount = 3
@@ -117,13 +122,6 @@ class BannerView: UIView,UIScrollViewDelegate {
         }
     }
     
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        if let d = self.delegate {
-            for v in self.cellViews {
-                d.cellForBannerView(v)
-            }
-        }
-    }
+   
     
 }
