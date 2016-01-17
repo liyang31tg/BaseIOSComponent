@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LQt-wk-XWs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hs-J8-boV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="182"/>
+            <point key="canvasLocation" x="-297" y="-175"/>
         </scene>
         <!--我-->
         <scene sceneID="mz7-JW-iNo">
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOn-st-UUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="1501"/>
+            <point key="canvasLocation" x="-795" y="949"/>
         </scene>
         <!--ScrollViewDetail-->
         <scene sceneID="Y0u-Jl-2pR">
@@ -90,11 +90,69 @@
                     <connections>
                         <segue destination="roy-cx-rLf" kind="show" identifier="scrollView2pullToRefresh" id="nr8-QP-Tl5"/>
                         <segue destination="eMu-J0-AmC" kind="show" identifier="scrollView2pages" id="qMQ-4J-dpa"/>
+                        <segue destination="06W-OI-gWc" kind="show" identifier="scrollview2Banner" id="Bhq-WK-WhR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dt8-f1-ARR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="642"/>
+            <point key="canvasLocation" x="85" y="694"/>
+        </scene>
+        <!--轮播banner-->
+        <scene sceneID="T6q-r3-9ie">
+            <objects>
+                <viewController id="06W-OI-gWc" customClass="ScrollViewBannerVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cTH-PG-SiH"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wb-8e-01B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L0k-zl-oP9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-Jp-UBN" customClass="BannerView" customModule="微信" customModuleProvider="target">
+                                <rect key="frame" x="10" y="128" width="300" height="128"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.41960784309999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jOX-ze-FdE"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjg-Gk-Vpx">
+                                <rect key="frame" x="10" y="306" width="300" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="RyP-qR-51A">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RyP-qR-51A" firstAttribute="width" secondItem="tjg-Gk-Vpx" secondAttribute="width" id="0ss-t5-kLL"/>
+                                    <constraint firstItem="RyP-qR-51A" firstAttribute="leading" secondItem="tjg-Gk-Vpx" secondAttribute="leading" id="8aW-Mp-kWB"/>
+                                    <constraint firstItem="RyP-qR-51A" firstAttribute="top" secondItem="tjg-Gk-Vpx" secondAttribute="top" id="9eV-8O-E5l"/>
+                                    <constraint firstItem="RyP-qR-51A" firstAttribute="height" secondItem="tjg-Gk-Vpx" secondAttribute="height" id="NTP-ii-2qp"/>
+                                    <constraint firstAttribute="trailing" secondItem="RyP-qR-51A" secondAttribute="trailing" id="het-fV-GKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="RyP-qR-51A" secondAttribute="bottom" id="qHO-hz-EPx"/>
+                                    <constraint firstAttribute="height" constant="128" id="xlA-zp-cYn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ea2-Jp-UBN" secondAttribute="trailing" constant="10" id="Epi-Ye-kwD"/>
+                            <constraint firstItem="tjg-Gk-Vpx" firstAttribute="top" secondItem="Ea2-Jp-UBN" secondAttribute="bottom" constant="50" id="Fse-Tu-FaW"/>
+                            <constraint firstItem="Ea2-Jp-UBN" firstAttribute="top" secondItem="L0k-zl-oP9" secondAttribute="top" constant="128" id="G4N-pQ-92V"/>
+                            <constraint firstAttribute="trailing" secondItem="tjg-Gk-Vpx" secondAttribute="trailing" constant="10" id="Naz-zR-VKm"/>
+                            <constraint firstItem="Ea2-Jp-UBN" firstAttribute="leading" secondItem="L0k-zl-oP9" secondAttribute="leading" constant="10" id="dzX-we-PRg"/>
+                            <constraint firstItem="tjg-Gk-Vpx" firstAttribute="leading" secondItem="L0k-zl-oP9" secondAttribute="leading" constant="10" id="p6Z-oH-FPg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="轮播banner" id="w8B-XR-jTw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bannerScrollView" destination="Ea2-Jp-UBN" id="sUY-yL-KLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9f-bu-GgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="298"/>
         </scene>
         <!--ConstraintDetail-->
         <scene sceneID="MBd-LC-YRh">
@@ -145,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8e-wI-LGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="1434"/>
+            <point key="canvasLocation" x="-222" y="1561"/>
         </scene>
         <!--TextKitDetail-->
         <scene sceneID="7N8-dc-KUH">
@@ -197,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ex-8P-2Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760" y="1408"/>
+            <point key="canvasLocation" x="184" y="1340"/>
         </scene>
         <!--约束初探-->
         <scene sceneID="18B-2Q-dvo">
@@ -217,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIx-VS-hpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="2028"/>
+            <point key="canvasLocation" x="184" y="1907"/>
         </scene>
         <!--几个重要的API-->
         <scene sceneID="4vG-mZ-p4U">
@@ -310,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJm-2a-Xxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="2028"/>
+            <point key="canvasLocation" x="-222" y="2147"/>
         </scene>
         <!--发现-->
         <scene sceneID="wYc-vt-Qvw">
@@ -361,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="736"/>
+            <point key="canvasLocation" x="-375" y="782"/>
         </scene>
         <!--Setup PagesVC-->
         <scene sceneID="DRm-1E-96q">
@@ -412,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It3-ve-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="916"/>
+            <point key="canvasLocation" x="1124" y="897"/>
         </scene>
         <!--链接和电话号码-->
         <scene sceneID="2OW-sr-ilj">
@@ -463,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8s-X8-eRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="1413"/>
+            <point key="canvasLocation" x="613" y="1340"/>
         </scene>
         <!--pullToRefresh-->
         <scene sceneID="H5W-MF-W2t">
@@ -561,7 +619,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuV-J3-7tJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="-373"/>
+            <point key="canvasLocation" x="-537" y="-561"/>
         </scene>
         <!--Chat Table View-->
         <scene sceneID="gqj-5a-hxY">
@@ -612,7 +670,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGZ-q2-5eG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110" y="182"/>
+            <point key="canvasLocation" x="-802" y="196"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nsw-a1-bC6">
@@ -629,10 +687,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ley-XH-EeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-489" y="182"/>
+            <point key="canvasLocation" x="-1186" y="196"/>
         </scene>
     </scenes>
     <resources>
+        <image name="image0" width="320" height="160"/>
         <image name="tabbar_contacts" width="27" height="23"/>
         <image name="tabbar_contactsHL" width="27" height="23"/>
         <image name="tabbar_discover" width="23" height="23"/>

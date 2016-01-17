@@ -12,7 +12,7 @@ class ScrollViewDetailVC: BasePlainTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataArray = [DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - pullToRefresh",performIdentifier: "scrollView2pullToRefresh"),
+        dataArray = [DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - 轮播banner",performIdentifier: "scrollview2Banner"),                     DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - pullToRefresh",performIdentifier: "scrollView2pullToRefresh"),
         DiscoverTableViewCellDomain(sectionTitle: "", title: "scrollview - 引导页",performIdentifier: "scrollView2pages")]
     }
     override func viewWillAppear(animated: Bool) {
