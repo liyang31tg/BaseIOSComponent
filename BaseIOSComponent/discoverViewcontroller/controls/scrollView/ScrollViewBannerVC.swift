@@ -18,10 +18,13 @@ class ScrollViewBannerVC: BaseViewController,BannerViewDelegate {
         self.bannerScrollView.bannerViewCell = UIImageView.self
        
     }
-    func cellForBannerView(cell:UIView){
+    func cellForBannerView(cell:UIView,index:Int){
         let imageview = cell as! UIImageView
-        imageview.image = UIImage(named: "image0")
+        imageview.image = UIImage(named: "image\(index)")
+    }
     
+    func numberOfBannerView() -> Int {
+        return 3
     }
 }
 
@@ -29,10 +32,8 @@ class ScrollViewBannerVC: BaseViewController,BannerViewDelegate {
 @objc
 protocol BannerViewDelegate{
     
-    func cellForBannerView(cell:UIView)
-    
-    
-    optional func numberOfBannerView()
+    func cellForBannerView(cell:UIView,index:Int)
+    func numberOfBannerView() -> Int
     optional func didBannerView()
 
 }
@@ -41,23 +42,24 @@ class BannerView: UIView,UIScrollViewDelegate {
     //config start ----
     var  bannerViewCell:AnyClass?{
         didSet{
-            self.updateContentView()
-            if let d = self.delegate {
-                for v in self.cellViews {
-                    d.cellForBannerView(v)
-                }
+            if let _ = self.delegate {
+                self.fillContent()
             }
         }
     }
-    let imageCount = 3
+    var delegate:BannerViewDelegate?{
+        didSet{
+            if let _ =  self.bannerViewCell {
+             self.fillContent()
+            }
+        }
     
-    
-    var delegate:BannerViewDelegate?
+    }
     //config end  ---
     lazy var cellViews:[UIView] = {
         return []
     }()
-    
+    let imageCount = 3 //不可修改
     lazy  var contentScrollView:UIScrollView = {
         let tmpScrollView = UIScrollView()
         tmpScrollView.delegate = self
@@ -81,6 +83,19 @@ class BannerView: UIView,UIScrollViewDelegate {
         let actrailing  = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1, constant: 0)
         let acbottom    = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 0)
         self.addConstraints([actop,acleading,actrailing,acbottom])
+    }
+    func fillContent(){
+        self.updateContentView()
+        self.showPage(0)
+    }
+    //0开始
+    func showPage(pageIndex:Int){
+        let allCount = self.delegate!.numberOfBannerView()
+        for (index,v) in self.cellViews.enumerate() {
+        let tmpIndex = pageIndex + Int(index) - 1
+            self.delegate!.cellForBannerView(v,index: tmpIndex < 0 ? allCount : tmpIndex > allCount ? 0 : tmpIndex)
+        
+        }
     }
     // 根据各种条件刷新View
     func updateContentView(){
