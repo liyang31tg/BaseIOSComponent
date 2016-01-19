@@ -16,25 +16,25 @@ class ScrollViewBannerVC: BaseViewController,BannerViewDelegate {
         self.edgesForExtendedLayout = UIRectEdge.None
         self.bannerScrollView.delegate = self
         self.bannerScrollView.bannerViewCell = UIImageView.self
-       
     }
-    func cellForBannerView(cell:UIView,index:Int){
+    func bannerView(bannerView: BannerView, cell: UIView, index: Int) {
         let imageview = cell as! UIImageView
         imageview.image = UIImage(named: "image\(index)")
     }
-    
     func numberOfBannerView() -> Int {
         return 3
+    }
+    func bannerView(bannerView: BannerView, didIndex: Int) {
+        print("didIndex:\(index)")
     }
 }
 
 
 @objc
 protocol BannerViewDelegate{
-    
-    func cellForBannerView(cell:UIView,index:Int)
+    func bannerView(bannerView:BannerView,cell:UIView,index:Int)
     func numberOfBannerView() -> Int
-    optional func didBannerView()
+    optional func bannerView(bannerView:BannerView,didIndex:Int)
 
 }
 
@@ -59,7 +59,11 @@ class BannerView: UIView,UIScrollViewDelegate {
     lazy var cellViews:[UIView] = {
         return []
     }()
+    var bannerViewSize:CGSize!
     let imageCount = 3 //不可修改
+    var currentPage:Int!
+    var timer:NSTimer!
+    let repeatTime:NSTimeInterval = 5
     lazy  var contentScrollView:UIScrollView = {
         let tmpScrollView = UIScrollView()
         tmpScrollView.delegate = self
@@ -68,33 +72,65 @@ class BannerView: UIView,UIScrollViewDelegate {
         tmpScrollView.showsHorizontalScrollIndicator = false
         tmpScrollView.showsVerticalScrollIndicator = false
         tmpScrollView.pagingEnabled = true
-        
-//        tmpScrollView.contentOffset = CGPointMake(UISCREENWIDTH, 0);
-//        tmpScrollView.contentSize = CGSizeMake(UISCREENWIDTH * 3, UISCREENHEIGHT);
         return tmpScrollView
         }()
     override func awakeFromNib() {
         super.awakeFromNib()
         self.addSubview(contentScrollView)
-        contentScrollView.backgroundColor = UIColor.redColor()
         //add Constraints
         let actop       = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0)
         let acleading   = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1, constant: 0)
         let actrailing  = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1, constant: 0)
         let acbottom    = NSLayoutConstraint(item: contentScrollView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 0)
         self.addConstraints([actop,acleading,actrailing,acbottom])
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("tapAction")))
+        //初始化定时器
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(repeatTime, target: self, selector: Selector("repeatAction:"), userInfo: nil, repeats: true)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.bannerViewSize = self.frame.size
+        contentScrollView.setContentOffset(CGPointMake(bannerViewSize.width, 0), animated: false)
+    }
+    
+    //ScrollViewDelegate
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.x == self.bannerViewSize.width * 2 {
+            self.showPage(self.currentPage+1, scroll: true)
+        }
+        if scrollView.contentOffset.x == 0 {
+           self.showPage(self.currentPage-1, scroll: true)
+        }
+    }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        self.timer.invalidate()        
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(repeatTime, target: self, selector: Selector("repeatAction:"), userInfo: nil, repeats: true)
+    }
+    func tapAction(){
+        self.delegate?.bannerView?(self, didIndex: self.currentPage)
+    }
+    func repeatAction(timer:NSTimer){
+        contentScrollView.setContentOffset(CGPointMake(bannerViewSize.width * 2, 0), animated: true)
     }
     func fillContent(){
         self.updateContentView()
         self.showPage(0)
     }
     //0开始
-    func showPage(pageIndex:Int){
+    func showPage(pageIndex:Int,scroll:Bool = false){
         let allCount = self.delegate!.numberOfBannerView()
+        self.currentPage = pageIndex < 0 ? allCount : pageIndex > allCount ? 0 : pageIndex
         for (index,v) in self.cellViews.enumerate() {
-        let tmpIndex = pageIndex + Int(index) - 1
-            self.delegate!.cellForBannerView(v,index: tmpIndex < 0 ? allCount : tmpIndex > allCount ? 0 : tmpIndex)
-        
+        let tmpIndex = self.currentPage + Int(index) - 1
+            self.delegate!.bannerView(self, cell: v, index: tmpIndex < 0 ? allCount : tmpIndex > allCount ? 0 : tmpIndex)
+        }
+        if scroll {
+            contentScrollView.setContentOffset(CGPointMake(bannerViewSize.width, 0), animated: false)
         }
     }
     // 根据各种条件刷新View
