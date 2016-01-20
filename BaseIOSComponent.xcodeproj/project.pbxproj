@@ -62,6 +62,8 @@
 		B6F5D71C1C47EBB20089C67C /* ConstraintsImportaintAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D71B1C47EBB20089C67C /* ConstraintsImportaintAPI.swift */; };
 		B6F5D71E1C4935620089C67C /* ScrollViewBannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D71D1C4935620089C67C /* ScrollViewBannerVC.swift */; };
 		B6F5D7201C4957070089C67C /* tmp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F5D71F1C4957070089C67C /* tmp.xcassets */; };
+		B6F5D7221C4FD1520089C67C /* ScrollViewTargetOffSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7211C4FD1520089C67C /* ScrollViewTargetOffSet.swift */; };
+		B6F5D7251C4FD8D90089C67C /* UIColorEXTension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7241C4FD8D90089C67C /* UIColorEXTension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		B6F5D71B1C47EBB20089C67C /* ConstraintsImportaintAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsImportaintAPI.swift; sourceTree = "<group>"; };
 		B6F5D71D1C4935620089C67C /* ScrollViewBannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewBannerVC.swift; sourceTree = "<group>"; };
 		B6F5D71F1C4957070089C67C /* tmp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tmp.xcassets; sourceTree = "<group>"; };
+		B6F5D7211C4FD1520089C67C /* ScrollViewTargetOffSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewTargetOffSet.swift; sourceTree = "<group>"; };
+		B6F5D7241C4FD8D90089C67C /* UIColorEXTension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorEXTension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +304,7 @@
 		B619FDDF1C3036C0000A2A2A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6F5D7231C4FD8B50089C67C /* UIColorEXTension */,
 				B619FDE01C3036C0000A2A2A /* NSDataEXTension */,
 			);
 			path = Extension;
@@ -384,6 +389,7 @@
 				B6F5D70F1C42B2990089C67C /* ScrollViewDetailVC.swift */,
 				B6F5D7111C42B8850089C67C /* SetupPagesVC.swift */,
 				B6F5D71D1C4935620089C67C /* ScrollViewBannerVC.swift */,
+				B6F5D7211C4FD1520089C67C /* ScrollViewTargetOffSet.swift */,
 			);
 			path = scrollView;
 			sourceTree = "<group>";
@@ -404,6 +410,14 @@
 				B6F5D71B1C47EBB20089C67C /* ConstraintsImportaintAPI.swift */,
 			);
 			path = constraints;
+			sourceTree = "<group>";
+		};
+		B6F5D7231C4FD8B50089C67C /* UIColorEXTension */ = {
+			isa = PBXGroup;
+			children = (
+				B6F5D7241C4FD8D90089C67C /* UIColorEXTension.swift */,
+			);
+			path = UIColorEXTension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,6 +566,7 @@
 				B6F5D71A1C47DBAB0089C67C /* ConstraintsVC.swift in Sources */,
 				B6F5D7171C47D9570089C67C /* TextKitVC.swift in Sources */,
 				B6299C011C391FC700A19A2F /* SocketStringReader.swift in Sources */,
+				B6F5D7251C4FD8D90089C67C /* UIColorEXTension.swift in Sources */,
 				B619FDD81C302DB8000A2A2A /* Operation.swift in Sources */,
 				B619FDD71C302DB8000A2A2A /* HTTPSecurity.swift in Sources */,
 				B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */,
@@ -566,6 +581,7 @@
 				B6299C001C391FC700A19A2F /* SocketParser.swift in Sources */,
 				B6299BF91C391FC700A19A2F /* SocketEventHandler.swift in Sources */,
 				B619FDDE1C302EEA000A2A2A /* CommonUtil.swift in Sources */,
+				B6F5D7221C4FD1520089C67C /* ScrollViewTargetOffSet.swift in Sources */,
 				B6F5D71C1C47EBB20089C67C /* ConstraintsImportaintAPI.swift in Sources */,
 				B619FDDB1C302DB8000A2A2A /* Upload.swift in Sources */,
 				B6299BFE1C391FC700A19A2F /* SocketLogger.swift in Sources */,

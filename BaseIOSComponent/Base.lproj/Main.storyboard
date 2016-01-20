@@ -91,6 +91,7 @@
                         <segue destination="roy-cx-rLf" kind="show" identifier="scrollView2pullToRefresh" id="nr8-QP-Tl5"/>
                         <segue destination="eMu-J0-AmC" kind="show" identifier="scrollView2pages" id="qMQ-4J-dpa"/>
                         <segue destination="06W-OI-gWc" kind="show" identifier="scrollview2Banner" id="Bhq-WK-WhR"/>
+                        <segue destination="H0s-N1-eaB" kind="show" identifier="scrollView2TargetOffSet" id="82r-fb-H35"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dt8-f1-ARR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,6 +452,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It3-ve-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1124" y="897"/>
+        </scene>
+        <!--targetContentOffset-->
+        <scene sceneID="W3L-Np-YMO">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H0s-N1-eaB" customClass="ScrollViewTargetOffSet" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iCi-UD-nWh"/>
+                        <viewControllerLayoutGuide type="bottom" id="0o2-Mr-DWg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E4l-Fz-SBH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht7-Hr-9xt">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <connections>
+                                    <outlet property="delegate" destination="H0s-N1-eaB" id="NgO-eJ-z4U"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDD-ny-ejv">
+                                <rect key="frame" x="160" y="0.0" width="1" height="480"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.41960784309999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="8Zd-2n-Zns"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ht7-Hr-9xt" secondAttribute="trailing" id="0a6-vO-K1X"/>
+                            <constraint firstItem="0o2-Mr-DWg" firstAttribute="top" secondItem="ht7-Hr-9xt" secondAttribute="bottom" id="6tm-B3-cHz"/>
+                            <constraint firstItem="EDD-ny-ejv" firstAttribute="centerX" secondItem="E4l-Fz-SBH" secondAttribute="centerX" id="PfQ-lF-cLx"/>
+                            <constraint firstItem="ht7-Hr-9xt" firstAttribute="top" secondItem="iCi-UD-nWh" secondAttribute="bottom" id="Ugj-E9-iub"/>
+                            <constraint firstAttribute="bottom" secondItem="EDD-ny-ejv" secondAttribute="bottom" id="ko4-LM-5eS"/>
+                            <constraint firstItem="EDD-ny-ejv" firstAttribute="top" secondItem="E4l-Fz-SBH" secondAttribute="top" id="p6B-B8-KV8"/>
+                            <constraint firstItem="ht7-Hr-9xt" firstAttribute="leading" secondItem="E4l-Fz-SBH" secondAttribute="leading" id="pWs-lz-2Lo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="targetContentOffset" id="SwA-Bp-3bi"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="ht7-Hr-9xt" id="YDV-hj-hkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mt7-9Z-Bp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="1084"/>
         </scene>
         <!--链接和电话号码-->
         <scene sceneID="2OW-sr-ilj">
