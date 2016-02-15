@@ -17,5 +17,15 @@ class BaseViewController: UIViewController {
     func backAction(){
         self.navigationController?.popViewControllerAnimated(true)
     }
+    //MARK 解决假卡死
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if self.navigationController?.viewControllers.first == self {
+            self.navigationController?.interactivePopGestureRecognizer?.enabled = false
+        }else{
+            self.navigationController?.interactivePopGestureRecognizer?.enabled = true
+        }
+    }
+
     
 }
