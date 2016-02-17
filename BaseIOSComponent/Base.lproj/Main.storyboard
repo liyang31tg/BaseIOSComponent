@@ -135,6 +135,53 @@
             </objects>
             <point key="canvasLocation" x="538" y="298"/>
         </scene>
+        <!--支付集成-->
+        <scene sceneID="HG2-VR-kt3">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="K1L-Bm-J4u" customClass="PaymentPatternVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qgA-n0-G7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="cc3-6c-eGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUB-0J-Gqi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-3s-pmp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCellIdentifier" id="mFG-SU-hko" customClass="DiscoverTableViewCell" customModule="微信" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mFG-SU-hko" id="1uS-ua-McQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="K1L-Bm-J4u" id="Cv9-yy-Wpn"/>
+                                    <outlet property="delegate" destination="K1L-Bm-J4u" id="M17-MT-LKO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XiV-3s-pmp" firstAttribute="top" secondItem="qgA-n0-G7s" secondAttribute="bottom" id="CU5-ro-jxG"/>
+                            <constraint firstItem="cc3-6c-eGO" firstAttribute="top" secondItem="XiV-3s-pmp" secondAttribute="bottom" id="FxR-op-bKc"/>
+                            <constraint firstAttribute="trailing" secondItem="XiV-3s-pmp" secondAttribute="trailing" id="MDb-Vr-XHZ"/>
+                            <constraint firstItem="XiV-3s-pmp" firstAttribute="leading" secondItem="uUB-0J-Gqi" secondAttribute="leading" id="vf9-bK-zvy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="支付集成" id="UHU-4I-LeN"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wze-OB-XTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="1553"/>
+        </scene>
         <!--ConstraintDetail-->
         <scene sceneID="MBd-LC-YRh">
             <objects>
@@ -299,7 +346,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="6EU-cA-c0W"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -365,7 +412,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-2q-Lo3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoverTableViewCellIdentifier" id="9GC-GY-8Pj" customClass="DiscoverTableViewCell" customModule="微信" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="114" width="320" height="44"/>
@@ -396,6 +443,7 @@
                         <segue destination="7py-xk-z5m" kind="show" identifier="Discover2TextKitDetail" id="nxs-uK-Cpg"/>
                         <segue destination="Bz1-Dc-gLb" kind="show" identifier="Discover2UIScrollViewDetail" id="9YE-a2-6u8"/>
                         <segue destination="qK4-Wq-CGz" kind="show" identifier="Discover2ConstraintDetail" id="9gU-9L-nf9"/>
+                        <segue destination="K1L-Bm-J4u" kind="show" identifier="Discover2paymentPattern" id="M7Y-h7-dXW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It3-ve-8LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="897"/>
+            <point key="canvasLocation" x="1410" y="793"/>
         </scene>
         <!--targetContentOffset-->
         <scene sceneID="W3L-Np-YMO">

@@ -40,7 +40,7 @@
 		B6299C021C391FC700A19A2F /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BEF1C391FC700A19A2F /* SocketTypes.swift */; };
 		B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BF01C391FC700A19A2F /* SwiftRegex.swift */; };
 		B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BF11C391FC700A19A2F /* WebSocket.swift */; };
-		B67DA3731C340C55009BC0B3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67DA3721C340C55009BC0B3 /* libz.tbd */; };
+		B67DA3731C340C55009BC0B3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67DA3721C340C55009BC0B3 /* libz.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		B67DA3791C340D39009BC0B3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */; };
 		B67DA37B1C340F4F009BC0B3 /* weChat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67DA37A1C340F4F009BC0B3 /* weChat.xcassets */; };
 		B67DA3811C34180B009BC0B3 /* BaseTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3801C34180B009BC0B3 /* BaseTabbarViewController.swift */; };
@@ -50,6 +50,7 @@
 		B67DA3891C341884009BC0B3 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3881C341884009BC0B3 /* MeVC.swift */; };
 		B67DA38B1C3418A6009BC0B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */; };
 		B67DA38D1C341A7A009BC0B3 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */; };
+		B6C1A3B41C7444B300D20F0F /* PaymentPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1A3B31C7444B300D20F0F /* PaymentPatternVC.swift */; };
 		B6C8340A1C3FFBA30007BF1F /* BaseGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */; };
 		B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */; };
 		B6F5D7081C40A7DC0089C67C /* BasePlainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */; };
@@ -133,6 +134,7 @@
 		B67DA3881C341884009BC0B3 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B67DA38A1C3418A6009BC0B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B67DA38C1C341A7A009BC0B3 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		B6C1A3B31C7444B300D20F0F /* PaymentPatternVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentPatternVC.swift; sourceTree = "<group>"; };
 		B6C834091C3FFBA30007BF1F /* BaseGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGroupTableViewController.swift; sourceTree = "<group>"; };
 		B6F4B4AE1C3C2CAF005C88C4 /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
 		B6F5D7071C40A7DC0089C67C /* BasePlainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlainTableViewController.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 		B67DA37D1C3417C6009BC0B3 /* discoverViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				B6C1A3B21C74449A00D20F0F /* paymentPattern */,
 				B6F5D7181C47D9A30089C67C /* constraints */,
 				B6F5D7131C47D92F0089C67C /* textKit */,
 				B6F5D70B1C41575C0089C67C /* controls */,
@@ -372,6 +375,14 @@
 				B67DA3881C341884009BC0B3 /* MeVC.swift */,
 			);
 			path = meViewcontroller;
+			sourceTree = "<group>";
+		};
+		B6C1A3B21C74449A00D20F0F /* paymentPattern */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1A3B31C7444B300D20F0F /* PaymentPatternVC.swift */,
+			);
+			path = paymentPattern;
 			sourceTree = "<group>";
 		};
 		B6F5D70B1C41575C0089C67C /* controls */ = {
@@ -488,7 +499,7 @@
 				TargetAttributes = {
 					B619FD921C302BB4000A2A2A = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = Y67F42V7QS;
+						DevelopmentTeam = Y9H74886M9;
 					};
 					B619FDA61C302BB4000A2A2A = {
 						CreatedOnToolsVersion = 7.1;
@@ -598,6 +609,7 @@
 				B6F5D7121C42B8850089C67C /* SetupPagesVC.swift in Sources */,
 				B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */,
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
+				B6C1A3B41C7444B300D20F0F /* PaymentPatternVC.swift in Sources */,
 				B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */,
 				B6299BF81C391FC700A19A2F /* SocketEngineSpec.swift in Sources */,
 				B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */,
@@ -674,7 +686,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chengdu Painting Era Technology Co., Ltd. (TSZR83A4DM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chengdu Painting Era Technology Co., Ltd. (TSZR83A4DM)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -696,6 +709,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f91d8e4a-669e-46e2-9c70-835abf869b23";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -719,7 +733,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chengdu Painting Era Technology Co., Ltd. (TSZR83A4DM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chengdu Painting Era Technology Co., Ltd. (TSZR83A4DM)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -734,6 +749,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f91d8e4a-669e-46e2-9c70-835abf869b23";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -744,14 +760,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zegang Peng (LA48M23GR9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zegang Peng (LA48M23GR9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
 				PRODUCT_NAME = "微信";
-				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -761,14 +777,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zegang Peng (LA48M23GR9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zegang Peng (LA48M23GR9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BaseIOSComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boqiao919.BaseIOSComponent;
 				PRODUCT_NAME = "微信";
-				PROVISIONING_PROFILE = "fd9d9a5a-e931-43d1-b1dd-4299d4ec5317";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INCLUDE_PATHS = BaseIOSComponent/public/Extension/NSDataEXTension/zlib;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

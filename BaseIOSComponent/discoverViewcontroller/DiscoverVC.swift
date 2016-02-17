@@ -16,7 +16,11 @@ class DiscoverVC: BaseGroupTableViewController{
                      [DiscoverTableViewCellDomain(sectionTitle: "控件积累", title: "",performIdentifier: ""),
                     DiscoverTableViewCellDomain(sectionTitle: "nil", title: "UIScrollView",performIdentifier: "Discover2UIScrollViewDetail")],
                     [DiscoverTableViewCellDomain(sectionTitle: "自动布局", title: "",performIdentifier: ""),
-                        DiscoverTableViewCellDomain(sectionTitle: "nil", title: "约束",performIdentifier: "Discover2ConstraintDetail")]]
+                        DiscoverTableViewCellDomain(sectionTitle: "nil", title: "约束",performIdentifier: "Discover2ConstraintDetail")],
+                    [DiscoverTableViewCellDomain(sectionTitle: "支付方式", title: "",performIdentifier: ""),
+                    DiscoverTableViewCellDomain(sectionTitle: "nil", title: "支付方式",performIdentifier: "Discover2paymentPattern")]]
+        
+    
 
     }
     override func viewWillAppear(animated: Bool) {
