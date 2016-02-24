@@ -305,6 +305,26 @@
             </objects>
             <point key="canvasLocation" x="184" y="1907"/>
         </scene>
+        <!--多线程-->
+        <scene sceneID="eXx-1c-dSL">
+            <objects>
+                <viewController id="kca-11-aIw" customClass="muti_threadVC" customModule="微信" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="05g-wu-Mxc"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBD-0Q-d1e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oyv-WD-3vz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="多线程" id="Mdm-c4-Kfu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQ8-TE-snj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="2091"/>
+        </scene>
         <!--几个重要的API-->
         <scene sceneID="4vG-mZ-p4U">
             <objects>
@@ -444,6 +464,7 @@
                         <segue destination="Bz1-Dc-gLb" kind="show" identifier="Discover2UIScrollViewDetail" id="9YE-a2-6u8"/>
                         <segue destination="qK4-Wq-CGz" kind="show" identifier="Discover2ConstraintDetail" id="9gU-9L-nf9"/>
                         <segue destination="K1L-Bm-J4u" kind="show" identifier="Discover2paymentPattern" id="M7Y-h7-dXW"/>
+                        <segue destination="kca-11-aIw" kind="show" identifier="Discover2mutiThread" id="Y0x-VC-VnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYb-1Q-D4D" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,7 +18,9 @@ class DiscoverVC: BaseGroupTableViewController{
                     [DiscoverTableViewCellDomain(sectionTitle: "自动布局", title: "",performIdentifier: ""),
                         DiscoverTableViewCellDomain(sectionTitle: "nil", title: "约束",performIdentifier: "Discover2ConstraintDetail")],
                     [DiscoverTableViewCellDomain(sectionTitle: "支付方式", title: "",performIdentifier: ""),
-                    DiscoverTableViewCellDomain(sectionTitle: "nil", title: "支付方式",performIdentifier: "Discover2paymentPattern")]]
+                    DiscoverTableViewCellDomain(sectionTitle: "nil", title: "支付方式",performIdentifier: "Discover2paymentPattern")],
+                    [DiscoverTableViewCellDomain(sectionTitle: "多线程", title: "",performIdentifier: ""),
+                        DiscoverTableViewCellDomain(sectionTitle: "nil", title: "多线程",performIdentifier: "Discover2mutiThread")]]
         
     
 

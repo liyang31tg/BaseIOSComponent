@@ -40,6 +40,7 @@
 		B6299C021C391FC700A19A2F /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BEF1C391FC700A19A2F /* SocketTypes.swift */; };
 		B6299C031C391FC700A19A2F /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BF01C391FC700A19A2F /* SwiftRegex.swift */; };
 		B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6299BF11C391FC700A19A2F /* WebSocket.swift */; };
+		B66C2D5D1C7DEF0600334EBB /* muti_threadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C2D5C1C7DEF0600334EBB /* muti_threadVC.swift */; };
 		B67DA3731C340C55009BC0B3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B67DA3721C340C55009BC0B3 /* libz.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		B67DA3791C340D39009BC0B3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */; };
 		B67DA37B1C340F4F009BC0B3 /* weChat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67DA37A1C340F4F009BC0B3 /* weChat.xcassets */; };
@@ -124,6 +125,7 @@
 		B6299BEF1C391FC700A19A2F /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
 		B6299BF01C391FC700A19A2F /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
 		B6299BF11C391FC700A19A2F /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		B66C2D5C1C7DEF0600334EBB /* muti_threadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = muti_threadVC.swift; sourceTree = "<group>"; };
 		B67DA3721C340C55009BC0B3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B67DA3781C340D39009BC0B3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		B67DA37A1C340F4F009BC0B3 /* weChat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = weChat.xcassets; sourceTree = "<group>"; };
@@ -321,6 +323,14 @@
 			path = NSDataEXTension;
 			sourceTree = "<group>";
 		};
+		B66C2D5B1C7DEEE900334EBB /* muti-thread */ = {
+			isa = PBXGroup;
+			children = (
+				B66C2D5C1C7DEF0600334EBB /* muti_threadVC.swift */,
+			);
+			path = "muti-thread";
+			sourceTree = "<group>";
+		};
 		B67DA3761C340D23009BC0B3 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +361,7 @@
 		B67DA37D1C3417C6009BC0B3 /* discoverViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				B66C2D5B1C7DEEE900334EBB /* muti-thread */,
 				B6C1A3B21C74449A00D20F0F /* paymentPattern */,
 				B6F5D7181C47D9A30089C67C /* constraints */,
 				B6F5D7131C47D92F0089C67C /* textKit */,
@@ -611,6 +622,7 @@
 				B619FD971C302BB4000A2A2A /* AppDelegate.swift in Sources */,
 				B6C1A3B41C7444B300D20F0F /* PaymentPatternVC.swift in Sources */,
 				B6F4B4AF1C3C2CAF005C88C4 /* ChatTableView.swift in Sources */,
+				B66C2D5D1C7DEF0600334EBB /* muti_threadVC.swift in Sources */,
 				B6299BF81C391FC700A19A2F /* SocketEngineSpec.swift in Sources */,
 				B6299C041C391FC700A19A2F /* WebSocket.swift in Sources */,
 				B6F5D70E1C4157700089C67C /* ScrollViewController.swift in Sources */,
